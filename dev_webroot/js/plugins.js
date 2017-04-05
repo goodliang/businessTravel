@@ -102,9 +102,9 @@ $(document).ready(function() {
         .popover();
 
     // Add slimscroll to element
-    $('.full-height-scroll').slimscroll({
-        height: '100%'
-    })
+    // $('.full-height-scroll').slimscroll({
+    //     height: '100%'
+    // })
 });
 
 
