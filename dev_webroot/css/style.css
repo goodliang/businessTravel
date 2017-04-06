@@ -4028,7 +4028,7 @@ body {
     font-size: 13px;
     color: #676a6c;
     overflow-x: hidden;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    /* text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);*/
     line-height: 1.7em;
 }
 
@@ -4216,7 +4216,7 @@ video {
 }
 
 .wrapper-content {
-    padding: 62px 10px 40px;
+    padding: 20px 10px 40px;
 }
 
 #page-wrapper {
@@ -10087,68 +10087,57 @@ body.md-skin {
 }
 
 
-/*框架修改*/
+/*新增共用*/
 
-.body-bg {
-    background: rgba(70, 158, 179, 1);
-}
-
-
-/*.ibox.ibox-primary {
-    border-radius: 4px;
-    overflow: hidden;
+.rounded {
+    border-radius: 500px;
 }
 
-.ibox.ibox-primary .ibox-title,
-.ibox.ibox-primary .ibox-content {
-    border: 0;
+.hr {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    clear: both;
+    margin: 1rem 0;
+    line-height: 1;
+    height: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: rgba(0, 0, 0, .85);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.ibox {
-    background: #fff;
+.hr.empty {
+    border-top: 1px dotted rgba(0, 0, 0, .1);
+    border-bottom: 1px dotted rgba(255, 255, 255, .2);
 }
 
-.ibox-title {
-    border: 0;
-    padding: 12px 20px;
+.panel-basic {
+    padding: 20px;
 }
 
-.ibox-title+.ibox-content {
-    border-top-width: 1px;
+.panel-basic .panel-heading {
+    margin: -20px -20px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.ibox-title h5 {
-    margin: 0 !important;
-    line-height: 1.7em;
-    position: relative;
-    padding-left: 14px;
-}
-.ibox-title h5:before{
-    content: "";
-    position: absolute;
-    width: 5px;
-    left:0px;
-    top:10%;
-    height: 80%;
-    background: #54b9cc;
-}
-.ibox-content {
-    padding: 20px 0;
-    margin: 0 20px;
-    border-width: 0;
+.panel-basic .panel-heading+.panel-body {
+    margin-top: 25px;
 }
 
-.ibox-footer {
-    padding: 12px 0;
-    margin: 0 20px;
+.panel-basic .panel-body {
+    padding: 0;
 }
 
-.ibox-title,
-.ibox-content,
-.ibox-footer {
-    background: none;
+.error-pages {
+    text-align: center;
+    padding-top: 100px;
 }
-*/
 
 
 /*框架修改*/
@@ -10160,6 +10149,15 @@ a {
 a:focus,
 a:hover {
     color: #48adc0;
+}
+
+.body-bg {
+    background: rgba(70, 158, 179, 1);
+}
+
+.radio label,
+.checkbox label {
+    line-height: 1.42857143;
 }
 
 .ibox {
@@ -10214,10 +10212,19 @@ a:hover {
 .panel-heading {
     font-size: 14px;
     font-weight: 400;
+    padding: 12px 20px;
+}
+
+.panel-body {
+    padding: 20px;
 }
 
 
 /*新增*/
+
+.nav-blue.navbar-fixed-top+.wrapper-content {
+    padding: 87px 10px 40px;
+}
 
 .nav-blue.navbar-fixed-top {
     margin-bottom: 0;
@@ -10353,4 +10360,16 @@ body.mini-navbar .navbar-left-blue .big-item .iconfont {
 .ct-series-a .ct-bar,
 .ct-series-a .ct-slice-donut {
     stroke: #46b39f !important;
+}
+
+.irs-from,
+.irs-to,
+.irs-single {
+    background: #54b9cc !important;
+}
+
+.irs-from:after,
+.irs-to:after,
+.irs-single:after {
+    border-top-color: #54b9cc !important;
 }
