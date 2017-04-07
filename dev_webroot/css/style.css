@@ -10219,6 +10219,24 @@ a:hover {
     padding: 20px;
 }
 
+.tabs-container .nav.nav-pills {
+    margin-bottom: 10px;
+}
+
+.tabs-container .nav.nav-pills > li.active {
+    border-width: 0;
+    background: none;
+}
+
+.tabs-container .nav.nav-pills > li > a {
+    padding: 4px 14px;
+    border-radius: 4px;
+}
+
+.tabs-container .nav.nav-pills > li.active > a {
+    background: #54b9cc;
+}
+
 
 /*新增*/
 
@@ -10337,6 +10355,13 @@ body.mini-navbar .navbar-left-blue .big-item .iconfont {
 .nav > li.big-item.active {
     background-color: rgba(0, 0, 0, 0.1);
     border: none;
+}
+
+.exchange-right {
+    position: absolute;
+    right: -1.6em;
+    top: .8em;
+    cursor: pointer;
 }
 
 

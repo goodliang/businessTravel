@@ -178,18 +178,14 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-6">
                                         <div class="form-group has-feedback">
                                             <input type="text" class="form-control" placeholder="出发城市">
                                             <span class="form-control-feedback"><i class="fa fa-map-marker text-muted"></i></span>
+                                            <i class="fa fa-exchange exchange-right"></i>
                                         </div>
                                     </div>
-                                    <div class="col-lg-1">
-                                        <div class="form-group text-center">
-                                            <label for=""><i class="fa fa-exchange"></i></label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-6">
                                         <div class="form-group has-feedback">
                                             <input type="text" class="form-control" placeholder="到达城市">
                                             <span class="form-control-feedback"><i class="fa fa-map-marker text-muted"></i></span>
@@ -197,14 +193,13 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-6">
                                         <div class="form-group">
                                             <label for="" class="font-noraml">出行人数</label>
                                             <input type="text" class="form-control" value="1" disabled="">
                                         </div>
                                     </div>
-                                    <div class="col-lg-1"></div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-6">
                                         <div class="form-group">
                                             <label for="" class="font-noraml">出行方式</label>
                                             <select class="form-control" name="account">
@@ -215,15 +210,14 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-6">
                                         <div class="form-group has-feedback">
                                             <label for="" class="font-noraml">出发日期和时间</label>
                                             <input type="text" class="form-control" placeholder="年/月/日">
                                             <span class="form-control-feedback"><i class="fa fa-calendar text-muted"></i></span>
                                         </div>
                                     </div>
-                                    <div class="col-lg-1"></div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-6">
                                         <div class="form-group has-feedback">
                                             <div class="m-t-sm">
                                                 <div id="ionrange_1"></div>
@@ -232,7 +226,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-6">
                                         <div class="form-group has-feedback">
                                             <label for="" class="font-noraml">返回日期和时间</label>
                                             <input type="text" class="form-control" placeholder="年/月/日">
@@ -240,7 +234,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-1"></div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-6">
                                         <div class="form-group has-feedback">
                                             <div class="m-t-sm">
                                                 <div id="ionrange_2"></div>
@@ -249,10 +243,94 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-8">
+                                    <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="" class="font-noraml">关键词</label>
                                             <input type="text" class="form-control" placeholder="酒店名/地标/商圈">
+                                        </div>
+                                    </div>
+                                    <!--                                     <div class="col-lg-6">
+                                       <div class="m-t-lg">
+                                           选择附近酒店 <i class="fa fa-chevron-down"></i>
+                                       </div>
+                                    </div> -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="checkbox checkbox-info checkbox-circle">
+                                            <input id="checkbox8" type="checkbox" checked="">
+                                            <label for="checkbox8">
+                                                选择附近酒店
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="panel panel-basic" style="background-color: #f2f2f2">
+                                            <div class="panel-body">
+                                                <div class="form-inline">
+                                                    <div class="form-group">
+                                                        <p class="form-control-static text-muted">优先推荐</p>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" value="10">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <p class="form-control-static text-muted">公里以内</p>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs-container m-t-md">
+                                                    <ul class="nav nav-pills">
+                                                        <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">机场</a></li>
+                                                        <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">火车站</a></li>
+                                                        <li class=""><a data-toggle="tab" href="#tab-3" aria-expanded="false">分公司</a></li>
+                                                        <li class=""><a data-toggle="tab" href="#tab-4" aria-expanded="false">预设地址</a></li>
+                                                    </ul>
+                                                    <div class="tab-content" style="background-color: #fff">
+                                                        <div id="tab-1" class="tab-pane active">
+                                                            <div class="p-m">
+                                                                <div class="row">
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海虹桥机场</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-primary">上海虹桥机场</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海虹桥机场</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海虹桥机场</a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tab-2" class="tab-pane">
+                                                            <div class="p-m">
+                                                                <div class="row">
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海东站</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海南站</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海西站</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海北站</a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tab-3" class="tab-pane">
+                                                            <div class="p-m">
+                                                                <div class="row">
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海浦东分公司</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海东方明珠分公司</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海西站</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海北站</a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tab-4" class="tab-pane">
+                                                            <div class="p-m">
+                                                                <div class="row">
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海金融街88号楼401室</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海高桥街41号院</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海滨海路01号院</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海步行街南侧9号楼1室</a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
