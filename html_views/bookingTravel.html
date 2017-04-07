@@ -52,48 +52,6 @@
                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i> </a>
                 </div>
                 <ul class="nav navbar-top-links navbar-right">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                            <i class="fa fa-bell"></i> <span class="label label-warning">8</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-alerts">
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
-                                        <span class="pull-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                        <span class="pull-right text-muted small">12 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                        <span class="pull-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <div class="text-center link-block">
-                                    <a href="#">
-                                        <strong>See All Alerts</strong>
-                                        <i class="fa fa-angle-right"></i>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
                     <li>
                         <a href="login.html">
                             <i class="fa fa-sign-out"></i> 安全退出
@@ -121,35 +79,47 @@
                                     <div class="form-group">
                                         <p class="form-control-static text-muted">的政策</p>
                                     </div>
-                                    <div class="hr empty"></div>
-                                    <div class="radio-group">
-                                        <div class="radio radio-inline" style="padding-left: 0">
-                                            员工状态:
-                                        </div>
-                                        <div class="radio radio-info radio-inline">
-                                            <input type="radio" value="option1" name="radioInline01" checked="">
-                                            <label for="">
-                                                常用出行人
-                                            </label>
-                                        </div>
-                                        <div class="radio radio-info radio-inline">
-                                            <input type="radio" value="option1" name="radioInline01">
-                                            <label for="">
-                                                本公司人员
-                                            </label>
-                                        </div>
-                                        <div class="radio radio-info radio-inline">
-                                            <input type="radio" value="option1" name="radioInline01">
-                                            <label for="">
-                                                临时差旅人
-                                            </label>
-                                        </div>
+                                </div>
+                                <div class="hr empty"></div>
+                                <div class="radio-group">
+                                    <div class="radio radio-inline" style="padding-left: 0">
+                                        员工状态:
                                     </div>
-                                    <div class="m-t-md">
-                                        <a class="btn btn-primary btn-sm m-r-sm btn-outline">本人</a>
-                                        <a class="btn btn-primary btn-sm m-r-sm btn-outline">常用人1</a>
-                                        <a class="btn btn-primary btn-sm m-r-sm btn-outline">常用人1</a>
-                                        <a class="btn btn-default btn-sm m-r-sm btn-outline">+ 添加新人</a>
+                                    <div class="radio radio-info radio-inline">
+                                        <input type="radio" value="option1" name="radioInline01" checked="">
+                                        <label for="">
+                                            常用出行人
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-info radio-inline">
+                                        <input type="radio" value="option1" name="radioInline01">
+                                        <label for="">
+                                            本公司人员
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-info radio-inline">
+                                        <input type="radio" value="option1" name="radioInline01">
+                                        <label for="">
+                                            临时差旅人
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="space-15">
+                                    <a class="btn btn-primary btn-sm m-r-sm">本人</a>
+                                    <a class="btn btn-primary btn-sm m-r-sm btn-outline">常用人1</a>
+                                    <a class="btn btn-primary btn-sm m-r-sm btn-outline">常用人1</a>
+                                    <a class="btn btn-default btn-sm m-r-sm btn-outline">+ 添加新人</a>
+                                </div>
+                                <div class="hr empty"></div>
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <p class="form-control-static text-muted">关键字搜索：</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="中文名/英文名/邮箱">
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-primary">添加</button>
                                     </div>
                                 </div>
                             </div>
@@ -170,12 +140,12 @@
                                             往返
                                         </label>
                                     </div>
-                                    <div class="radio radio-info radio-inline">
+                                    <!--  <div class="radio radio-info radio-inline">
                                         <input type="radio" value="option1" name="radioInline02">
                                         <label for="">
                                             多程
                                         </label>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -203,6 +173,7 @@
                                         <div class="form-group">
                                             <label for="" class="font-noraml">出行方式</label>
                                             <select class="form-control" name="account">
+                                                <option>不限</option>
                                                 <option>飞机票</option>
                                                 <option>火车票</option>
                                             </select>
@@ -242,22 +213,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <!--                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="" class="font-noraml">关键词</label>
                                             <input type="text" class="form-control" placeholder="酒店名/地标/商圈">
                                         </div>
                                     </div>
-                                    <!--                                     <div class="col-lg-6">
-                                       <div class="m-t-lg">
-                                           选择附近酒店 <i class="fa fa-chevron-down"></i>
-                                       </div>
-                                    </div> -->
-                                </div>
+                                </div> -->
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div class="checkbox checkbox-info checkbox-circle">
+                                        <div class="checkbox checkbox-info checkbox-circle m-t-none">
                                             <input id="checkbox8" type="checkbox" checked="">
                                             <label for="checkbox8">
                                                 选择附近酒店
@@ -269,18 +235,7 @@
                                     <div class="col-lg-12">
                                         <div class="panel panel-basic" style="background-color: #f2f2f2">
                                             <div class="panel-body">
-                                                <div class="form-inline">
-                                                    <div class="form-group">
-                                                        <p class="form-control-static text-muted">优先推荐</p>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" value="10">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <p class="form-control-static text-muted">公里以内</p>
-                                                    </div>
-                                                </div>
-                                                <div class="tabs-container m-t-md">
+                                                <div class="tabs-container">
                                                     <ul class="nav nav-pills">
                                                         <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">机场</a></li>
                                                         <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">火车站</a></li>
@@ -336,7 +291,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div class="checkbox checkbox-info checkbox-circle">
+                                        <div class="checkbox checkbox-info checkbox-circle m-t-none">
                                             <input id="checkbox8" type="checkbox" checked="">
                                             <label for="checkbox8">
                                                 仅选择协议酒店
@@ -408,7 +363,6 @@
         max: 24,
         type: 'double',
         prefix: "",
-        maxPostfix: "+",
         prettify: false,
         hasGrid: true
     });
@@ -417,7 +371,6 @@
         max: 24,
         type: 'double',
         prefix: "",
-        maxPostfix: "+",
         prettify: false,
         hasGrid: true
     });
