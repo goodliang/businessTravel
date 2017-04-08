@@ -10089,6 +10089,12 @@ body.md-skin {
 
 /*新增共用*/
 
+.btn-light {
+    background-color: #fff;
+    color: inherit;
+    border: 1px solid #e5e6e7;
+}
+
 .rounded {
     border-radius: 500px;
 }
@@ -10432,6 +10438,10 @@ body.mini-navbar .navbar-left-blue .nav.nav-third-level {
     position: absolute;
     top: 60px;
     left: 120px;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a {
+    outline: none !important;
 }
 
 
