@@ -10130,11 +10130,22 @@ body.md-skin {
     margin: -20px -20px;
     font-size: 16px;
     font-weight: 400;
+    overflow: hidden;
 }
 
-.panel-basic .panel-heading+.panel-body {
+.panel-basic .panel-heading+.panel-body,
+.panel-basic .panel-heading+.panel-collapse .panel-body {
     margin-top: 25px;
 }
+
+.panel-group .panel-basic .panel-heading+.panel-collapse>.list-group,
+.panel-group .panel-basic .panel-heading+.panel-collapse>.panel-body {
+    border-top: 0;
+}
+
+/*.panel-group .panel-basic .panel-heading {
+    cursor: pointer;
+}*/
 
 .panel-basic .panel-body {
     padding: 0;
@@ -10241,6 +10252,39 @@ a:hover {
 
 .tabs-container .nav.nav-pills > li.active > a {
     background: #54b9cc;
+}
+
+.panel .bg-info {
+    border-radius: 4px;
+    background: rgba(84, 185, 204, 0.1);
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    padding: 15px;
+    line-height: 1.7;
+}
+
+.table.middle > thead > tr > th,
+.table.middle > tbody > tr > th,
+.table.middle > tfoot > tr > th,
+.table.middle > thead > tr > td,
+.table.middle > tbody > tr > td,
+.table.middle > tfoot > tr > td {
+    vertical-align: middle;
+}
+
+.table.border-none > thead > tr > th,
+.table.border-none > tbody > tr > th,
+.table.border-none > tfoot > tr > th,
+.table.border-none > thead > tr > td,
+.table.border-none > tbody > tr > td,
+.table.border-none > tfoot > tr > td {
+    border-width: 0;
 }
 
 
@@ -10443,7 +10487,9 @@ body.mini-navbar .navbar-left-blue .nav.nav-third-level {
 .bootstrap-select.btn-group .dropdown-menu li a {
     outline: none !important;
 }
-
+.layui-layer-lan .layui-layer-title{
+    background:#4484CE !important;
+}
 
 /*.home-panel-boder .ibox-content {
     background: none;

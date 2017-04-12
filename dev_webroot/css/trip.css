@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @title --
+ * @authors goodliang
+ * @date 2017-04-10 14:52:29
+ * 
+ */
+
+.top {
+    vertical-align: top !important;
+}
+
+.refund-info-body {
+    display: none;
+}
+
+.flight_time {
+    border-bottom: 1px dotted #ddd;
+    display: inline-block;
+    padding: 0 10px 5px;
+}

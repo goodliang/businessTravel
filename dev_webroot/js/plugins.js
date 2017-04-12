@@ -97,9 +97,8 @@ $(document).ready(function() {
             fix_height();
         }
     });
-
-    $("[data-toggle=popover]")
-        .popover();
+    $("[data-toggle=tooltip]").tooltip()
+    $("[data-toggle=popover]").popover();
 
     // Add slimscroll to element
     // $('.full-height-scroll').slimscroll({
