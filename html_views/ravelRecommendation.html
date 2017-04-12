@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会唐商旅采购系统</title>
+    <link href="css/root.css" rel="stylesheet">
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+    <link href="css/trip.css" rel="stylesheet">
+</head>
+
+<body class="body-bg">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side navbar-left-blue" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span class="small-img">
+                            <div class="btn btn-primary btn-circle gender"><i class="iconfont icon-nan"></i></div>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="text-white f18 font-bold">天小雨</strong><b class="caret text-white"></b>
+                             </span> <span class="text-white text-xs block">xiaoyu_wu@eventown.com </span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="#">个人信息</a></li>
+                                <li><a href="#">账户安全</a></li>
+                                <li><a href="#">我的临时差旅人</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">安全退出</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            唐
+                        </div>
+                    </li>
+                    <li class="big-item"><a href="bookingTravel.html"><i class="iconfont icon-iconfont"></i><span class="nav-label">差旅预订</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-lishihangcheng"></i><span class="nav-label">我的行程</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-dingdan"></i><span class="nav-label">订单中心</span></a></li>
+                    <li class="big-item">
+                        <a href="#"><i class="iconfont icon-shenpi"></i><span class="nav-label">审批中心</span><span class="label label-warning pull-right">24</span></a>
+                    </li>
+                    <li class="big-item">
+                        <a href="#"><i class="iconfont icon-tijianbaogao"></i> <span class="nav-label">报告中心</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="#">节省明细</a></li>
+                            <li>
+                                <a href="#">机票<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">机票消费</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">舱位统计</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">承运商</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">火车票<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">火车票消费</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">座位统计</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">酒店<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">洒店消费</a></li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-zhanghu"></i><span class="nav-label">账户管理</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper">
+            <nav class="navbar navbar-fixed-top nav-blue" role="navigation">
+                <div class="navbar-header">
+                    <div class="navbar-logo">
+                        <a href="/"><img src="img/sl_logo_small.png"></a>
+                    </div>
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i> </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> 安全退出
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="row wrapper border-bottom white-bg page-heading" style="margin:-25px -25px 25px">
+                    <div class="col-lg-10">
+                        <h2>差旅预订</h2>
+                        <ol class="breadcrumb">
+                            <li>
+                                <a href="bookingTravel.html">
+                                    差旅预订
+                                </a>
+                            </li>
+                            <li class="active">
+                                <strong>行程推荐</strong>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-2">
+                    </div>
+                </div>
+                <div class="panel panel-basic">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-4"><span class="text-muted">创建人：</span>吴小雨</div>
+                            <div class="col-sm-4"><span class="text-muted">创建时间：</span>2017-3-3 15:37</div>
+                            <div class="col-sm-4"><span class="text-muted">差旅人：</span>吴小雨</div>
+                            <div class="col-sm-4"><span class="text-muted">火车票：</span><span class="text-navy">￥1106</span>
+                            </div>
+                            <div class="col-sm-4"><span class="text-muted">洒店：</span><span class="text-navy">￥1106</span>
+                            </div>
+                            <div class="col-sm-4"><span class="text-muted">总费用：</span><span class="text-danger f18 font-bold">￥2106</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-basic">
+                        <div class="panel-heading">
+                            <div class="pull-right">
+                                <div class="checkbox checkbox-info checkbox-circle m-n">
+                                    <input id="checkbox8" type="checkbox" checked="">
+                                    <label for="checkbox8" class="f14">
+                                        已选中
+                                    </label>
+                                </div>
+                            </div><a class="text-primary show" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><i class="fa fa-plane text-info f20"></i> 推荐飞机票</a>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <table class="table table-hover middle m-b-none">
+                                    <thead>
+                                        <tr>
+                                            <th>航班信息</th>
+                                            <th>出发时间</th>
+                                            <th></th>
+                                            <th>到达时间</th>
+                                            <th>准点率</th>
+                                            <th>余票</th>
+                                            <th>价格
+                                                <!-- <small class="text-muted">（不包含机建燃油费）</small> --></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h4><img src="http://m.tuniucdn.com/fb2/t1/G1/M00/08/6D/Cii9EVbNinCINxjgAAA-wVuEaZ8AACRoQES4gIAAD7Z262_w40_h40_c1_t0.png" width="16px" height="16px">中国国航</h4><span class="text-muted">CA302 机型：321</span></td>
+                                            <td>
+                                                <h3>06:30</h3><span class="text-muted">首都机场T3</span>
+                                            </td>
+                                            <td class="top"><span class="flight_time">2小时15分</span></td>
+                                            <td>
+                                                <h3>08:50</h3><span class="text-muted">虹桥机场T2</span>
+                                            </td>
+                                            <td>有餐 | 准点率77%</td>
+                                            <td>102张</td>
+                                            <td class="f20 font-bold text-danger">¥740</td>
+                                            <td class="text-navy"><span class="refund-info">退改说明</span>
+                                                <div class="refund-info-body">不得签转，航班规定离站时间2小时之前：20%变更费；
+                                                    <br> 航班规定离站时间（含）2小时内及航班起飞后：30%变更费。
+                                                    <br> 航班规定离站时间2小时之前：30%退票费；
+                                                    <br> 航班规定离站时间（含）2小时内及航班起飞后：50%退票费；
+                                                </div>
+                                            </td>
+                                            <td class="text-right"><a href="#" class="btn btn-primary f-btn">更换航班</a><a href="#" class="btn btn-warning m-l-sm">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h4><img src="http://m.tuniucdn.com/fb2/t1/G1/M00/08/6D/Cii9EVbNinCINxjgAAA-wVuEaZ8AACRoQES4gIAAD7Z262_w40_h40_c1_t0.png" width="16px" height="16px">中国国航</h4><span class="text-muted">CA302 机型：321</span></td>
+                                            <td>
+                                                <h3>06:30</h3><span class="text-muted">首都机场T3</span>
+                                            </td>
+                                            <td class="top"><span class="flight_time">2小时15分</span></td>
+                                            <td>
+                                                <h3>08:50</h3><span class="text-muted">虹桥机场T2</span>
+                                            </td>
+                                            <td>有餐 | 准点率77%</td>
+                                            <td>102张</td>
+                                            <td class="f20 font-bold text-danger">¥740</td>
+                                            <td class="text-navy"><span class="refund-info">退改说明</span>
+                                                <div class="refund-info-body">不得签转，航班规定离站时间2小时之前：20%变更费；
+                                                    <br> 航班规定离站时间（含）2小时内及航班起飞后：30%变更费。
+                                                    <br> 航班规定离站时间2小时之前：30%退票费；
+                                                    <br> 航班规定离站时间（含）2小时内及航班起飞后：50%退票费；
+                                                </div>
+                                            </td>
+                                            <td class="text-right"><a href="#" class="btn btn-primary">更换航班</a><a href="#" class="btn btn-warning m-l-sm">删除</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-basic">
+                        <div class="panel-heading">
+                            <div class="pull-right">
+                                <div class="checkbox checkbox-info checkbox-circle m-n">
+                                    <input id="checkbox9" type="checkbox">
+                                    <label for="checkbox9" class="f14">
+                                        未选中
+                                    </label>
+                                </div>
+                            </div>
+                            <a class="text-primary show" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> <i class="fa fa-train text-info f20"></i> 推荐火车票</a>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <table class="table table-hover middle m-b-none">
+                                    <thead>
+                                        <tr>
+                                            <th>车次</th>
+                                            <th>发/到时间</th>
+                                            <th>发/到站</th>
+                                            <th>耗时</th>
+                                            <th>座位等级</th>
+                                            <th>票价</th>
+                                            <th>剩余票数</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h3>G101</h3><span class="text-muted">去程</span></td>
+                                            <td>
+                                                <h3>06:30</h3><span class="text-muted">12:39</span>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <a class="btn btn-info btn-outline btn-xs m-r-xs m-b-xs">始
+                                            </a>北京南站</div>
+                                                <div>
+                                                    <a class="btn btn-danger btn-outline btn-xs m-r-xs">终
+                                            </a>上海北站</div>
+                                            </td>
+                                            <td>5小时54分钟</td>
+                                            <td>二等座</td>
+                                            <td class="f20 font-bold text-danger">¥740</td>
+                                            <td>余99张</td>
+                                            <td class="text-right"><a href="#" class="btn btn-primary">更换车次</a><a href="#" class="btn btn-warning m-l-sm">删除</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h3>G101</h3><span class="text-muted">去程</span></td>
+                                            <td>
+                                                <h3>06:30</h3><span class="text-muted">12:39</span>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <a class="btn btn-info btn-outline btn-xs m-r-xs m-b-xs">始
+                                            </a>北京南站</div>
+                                                <div>
+                                                    <a class="btn btn-danger btn-outline btn-xs m-r-xs">终
+                                            </a>上海北站</div>
+                                            </td>
+                                            <td>5小时54分钟</td>
+                                            <td>二等座</td>
+                                            <td class="f20 font-bold text-danger">¥740</td>
+                                            <td>余99张</td>
+                                            <td class="text-right"><a href="#" class="btn btn-primary">更换车次</a><a href="#" class="btn btn-warning m-l-sm">删除</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-basic">
+                    <div class="panel-heading"><i class="fa fa-bed text-info f20"></i> 推荐住宿</div>
+                    <div class="panel-body">
+                        <div class="bg-info">
+                            <table class="table middle m-b-none border-none">
+                                <tbody>
+                                    <tr>
+                                        <td width="100"><img src="http://img.eventown.cn/upimg/litimg/081004/002A32O228.jpg!nw380h228" alt="" width="100"></td>
+                                        <td>
+                                            <h3><span>浦江精选酒店（上海静安寺地铁站店）（原南京西路店）</span><label class="btn btn-primary btn-xs btn-outline m-l-sm">协议酒店</label><small class="m-l-sm">三星级</small></h3>
+                                            <p><span class="text-warning">距离火车站15KM</span>&nbsp;&nbsp;|&nbsp;&nbsp;[人民广场] 黄浦区九江路619号(浙江中路路口 近南京路步行街 地铁一号线14号口)</p>
+                                        </td>
+                                        <td class="f14 font-bold text-warning">92%好评</td>
+                                        <td class="text-right"><a href="#" class="btn btn-primary">更换酒店</a><a href="#" class="btn btn-warning m-l-sm">删除</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <table class="table middle m-b-none">
+                            <thead>
+                                <tr>
+                                    <th>入住日期</th>
+                                    <th>离店日期</th>
+                                    <th>入住天数</th>
+                                    <th>房型</th>
+                                    <th>床型</th>
+                                    <th>早餐</th>
+                                    <th>宽带</th>
+                                    <th>取消规则</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        2017-3-5</td>
+                                    <td>
+                                        2017-3-7
+                                    </td>
+                                    <td>
+                                        2晚
+                                    </td>
+                                    <td>大床房B (内宾)</td>
+                                    <td>大床房</td>
+                                    <td>无早</td>
+                                    <td>免费</td>
+                                    <td>不可取消</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="text-center space-30">
+                    <button class="btn btn-info btn-lg m-r-md">提交</button>
+                    <button class="btn btn-default btn-lg">取消</button>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    Design and Developed by <a href="#">会唐网</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> Example Company &copy; 2007-2017
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="f-layer p-m" style="display:none">
+        <div class="panel">
+            <div class="panel-body bg-warning">
+                当前用户(吴小雨)所应用的机票预订差旅规则： -经济舱 -前60分钟后60分钟内最低价航班
+            </div>
+        </div>
+        <table class="table table-hover middle m-b-none">
+            <thead>
+                <tr class="active">
+                    <th>航班信息</th>
+                    <th>出发时间<i class="iconfont f14">&#xe602;</i></th>
+                    <th></th>
+                    <th>到达时间</th>
+                    <th>准点率</th>
+                    <th>余票</th>
+                    <th>价格
+                        <!-- <small class="text-muted">（不包含机建燃油费）</small> --></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h4><img src="http://m.tuniucdn.com/fb2/t1/G1/M00/08/6D/Cii9EVbNinCINxjgAAA-wVuEaZ8AACRoQES4gIAAD7Z262_w40_h40_c1_t0.png" width="16px" height="16px">中国国航</h4><span class="text-muted">CA302 机型：321</span></td>
+                    <td>
+                        <h3>06:30</h3><span class="text-muted">首都机场T3</span>
+                    </td>
+                    <td class="top"><span class="flight_time">2小时15分</span></td>
+                    <td>
+                        <h3>08:50</h3><span class="text-muted">虹桥机场T2</span>
+                    </td>
+                    <td>有餐 | 准点率77%</td>
+                    <td>102张</td>
+                    <td class="f20 font-bold text-danger">¥740</td>
+                    <td class="text-right"><a href="#" class="btn btn-primary">选择</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4><img src="http://m.tuniucdn.com/fb2/t1/G1/M00/08/6D/Cii9EVbNinCINxjgAAA-wVuEaZ8AACRoQES4gIAAD7Z262_w40_h40_c1_t0.png" width="16px" height="16px">中国国航</h4><span class="text-muted">CA302 机型：321</span></td>
+                    <td>
+                        <h3>06:30</h3><span class="text-muted">首都机场T3</span>
+                    </td>
+                    <td class="top"><span class="flight_time">2小时15分</span></td>
+                    <td>
+                        <h3>08:50</h3><span class="text-muted">虹桥机场T2</span>
+                    </td>
+                    <td>有餐 | 准点率77%</td>
+                    <td>102张</td>
+                    <td class="f20 font-bold text-danger">¥740</td>
+                    <td class="text-right"><a href="#" class="btn btn-primary">选择</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/plugins.js"></script>
+    <script src="js/plugins/bootstrap-select/bootstrap-select.js"></script>
+    <script src="js/plugins/layer/layer.js"></script>
+    <script>
+    $(".refund-info").hover(function() {
+        layer.tips($(this).siblings('.refund-info-body').html(), $(this), {
+            tips: [3, '#48adc0'],
+            time: 60000,
+            area: ['400px', 'auto']
+        });
+    }, function() {
+        layer.tips();
+    })
+    $('#accordion').collapse({
+        parent: true
+    })
+    $('.f-btn').on('click', function() {
+        layer.open({
+            type: 1,
+            skin: 'layui-layer-lan',
+            title: "更换航班",
+            area: ['80%', '80%'], //宽高
+            content: $('.f-layer')
+        });
+    })
+    </script>
+</body>
+
+</html>

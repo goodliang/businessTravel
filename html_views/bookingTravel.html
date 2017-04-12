@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>会唐商旅采购系统</title>
     <link href="css/root.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
 </head>
 
 <body class="body-bg">
@@ -15,6 +17,7 @@
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
                         <div class="dropdown profile-element"> <span class="small-img">
+                            <div class="btn btn-primary btn-circle gender"><i class="iconfont icon-nan"></i></div>
                             <img alt="image" class="img-circle" src="img/profile_small.jpg" />
                              </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -33,11 +36,60 @@
                             唐
                         </div>
                     </li>
-                    <li class="big-item"><a href="bookingTravel.html"><i class="iconfont icon-iconfont"></i><span>差旅预订</span></a></li>
-                    <li class="big-item"><a href="#"><i class="iconfont icon-dingdan"></i><span>订单中心</span></a></li>
-                    <li class="big-item"><a href="#"><i class="iconfont icon-shenpi"></i><span>审批中心</span></a></li>
-                    <li class="big-item"><a href="#"><i class="iconfont icon-tijianbaogao"></i><span>报告中心</span></a></li>
-                    <li class="big-item"><a href="#"><i class="iconfont icon-zhanghu"></i><span>账户管理</span></a></li>
+                    <li class="big-item"><a href="bookingTravel.html"><i class="iconfont icon-iconfont"></i><span class="nav-label">差旅预订</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-lishihangcheng"></i><span class="nav-label">我的行程</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-dingdan"></i><span class="nav-label">订单中心</span></a></li>
+                    <li class="big-item">
+                        <a href="#"><i class="iconfont icon-shenpi"></i><span class="nav-label">审批中心</span><span class="label label-warning pull-right">24</span></a>
+                    </li>
+                    <li class="big-item">
+                        <a href="#"><i class="iconfont icon-tijianbaogao"></i> <span class="nav-label">报告中心</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="#">节省明细</a></li>
+                            <li>
+                                <a href="#">机票<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">机票消费</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">舱位统计</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">承运商</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">火车票<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">火车票消费</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">座位统计</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">酒店<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">洒店消费</a></li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-zhanghu"></i><span class="nav-label">账户管理</span></a></li>
                 </ul>
             </div>
         </nav>
@@ -50,48 +102,6 @@
                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i> </a>
                 </div>
                 <ul class="nav navbar-top-links navbar-right">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                            <i class="fa fa-bell"></i> <span class="label label-warning">8</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-alerts">
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
-                                        <span class="pull-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                        <span class="pull-right text-muted small">12 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                        <span class="pull-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <div class="text-center link-block">
-                                    <a href="#">
-                                        <strong>See All Alerts</strong>
-                                        <i class="fa fa-angle-right"></i>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
                     <li>
                         <a href="login.html">
                             <i class="fa fa-sign-out"></i> 安全退出
@@ -99,17 +109,275 @@
                     </li>
                 </ul>
             </nav>
-            <div class="wrapper wrapper-content animated fadeInRight container">
-                <h2 class="m-t-lg">差旅预定</h2>
+            <div class="wrapper wrapper-content animated fadeInRight">
                 <div class="row">
                     <div class="col-lg-9">
-                        <div class="panel">
+                        <h2 class="m-t-none">差旅预定</h2>
+                        <div class="panel panel-basic">
                             <div class="panel-heading">选择出行人</div>
-                            <div class="panel-body"></div>
+                            <div class="panel-body">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <p class="form-control-static text-muted">本次订单的审批和费用预算标准将遵从</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="selectpicker form-control">
+                                            <option>twohuan</option>
+                                            <option>gaifei</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="form-control-static text-muted">的政策</p>
+                                    </div>
+                                </div>
+                                <div class="hr empty"></div>
+                                <div class="radio-group">
+                                    <div class="radio radio-inline" style="padding-left: 0">
+                                        员工状态:
+                                    </div>
+                                    <div class="radio radio-info radio-inline">
+                                        <input type="radio" value="option1" name="radioInline01" checked="">
+                                        <label for="">
+                                            常用出行人
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-info radio-inline">
+                                        <input type="radio" value="option1" name="radioInline01">
+                                        <label for="">
+                                            本公司人员
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-info radio-inline">
+                                        <input type="radio" value="option1" name="radioInline01">
+                                        <label for="">
+                                            临时差旅人
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="space-15">
+                                    <a class="btn btn-primary btn-sm m-r-sm">本人</a>
+                                    <a class="btn btn-primary btn-sm m-r-sm btn-outline">常用人1</a>
+                                    <a class="btn btn-primary btn-sm m-r-sm btn-outline">常用人1</a>
+                                    <a class="btn btn-default btn-sm m-r-sm btn-outline">+ 添加新人</a>
+                                </div>
+                                <div class="hr empty"></div>
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <p class="form-control-static text-muted">关键字搜索：</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="中文名/英文名/邮箱">
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-primary">添加</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-basic">
+                            <div class="panel-heading">行程预订</div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <div class="radio radio-info radio-inline">
+                                        <input type="radio" value="option1" name="radioInline02" checked="">
+                                        <label for="">
+                                            单程
+                                        </label>
+                                    </div>
+                                    <div class="radio radio-info radio-inline">
+                                        <input type="radio" value="option1" name="radioInline02">
+                                        <label for="">
+                                            往返
+                                        </label>
+                                    </div>
+                                    <!--  <div class="radio radio-info radio-inline">
+                                        <input type="radio" value="option1" name="radioInline02">
+                                        <label for="">
+                                            多程
+                                        </label>
+                                    </div> -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" placeholder="出发城市">
+                                            <span class="form-control-feedback"><i class="fa fa-map-marker text-muted"></i></span>
+                                            <i class="fa fa-exchange exchange-right"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" placeholder="到达城市">
+                                            <span class="form-control-feedback"><i class="fa fa-map-marker text-muted"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="" class="font-noraml">出行人数</label>
+                                            <input type="text" class="form-control" value="1" disabled="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="" class="font-noraml">出行方式</label>
+                                            <select class="selectpicker form-control">
+                                                <option>不限</option>
+                                                <option>飞机票</option>
+                                                <option>火车票</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group has-feedback">
+                                            <label for="" class="font-noraml">出发日期和时间</label>
+                                            <input type="text" class="form-control" placeholder="年/月/日">
+                                            <span class="form-control-feedback"><i class="fa fa-calendar text-muted"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group has-feedback">
+                                            <div class="m-t-sm">
+                                                <div id="ionrange_1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group has-feedback">
+                                            <label for="" class="font-noraml">返回日期和时间</label>
+                                            <input type="text" class="form-control" placeholder="年/月/日">
+                                            <span class="form-control-feedback"><i class="fa fa-calendar text-muted"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1"></div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group has-feedback">
+                                            <div class="m-t-sm">
+                                                <div id="ionrange_2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--                                 <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="" class="font-noraml">关键词</label>
+                                            <input type="text" class="form-control" placeholder="酒店名/地标/商圈">
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="checkbox checkbox-info checkbox-circle m-t-none">
+                                            <input id="checkbox8" type="checkbox" checked="">
+                                            <label for="checkbox8">
+                                                选择附近酒店
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="panel panel-basic" style="background-color: #f2f2f2">
+                                            <div class="panel-body">
+                                                <div class="tabs-container">
+                                                    <ul class="nav nav-pills">
+                                                        <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">机场</a></li>
+                                                        <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">火车站</a></li>
+                                                        <li class=""><a data-toggle="tab" href="#tab-3" aria-expanded="false">分公司</a></li>
+                                                        <li class=""><a data-toggle="tab" href="#tab-4" aria-expanded="false">预设地址</a></li>
+                                                    </ul>
+                                                    <div class="tab-content" style="background-color: #fff">
+                                                        <div id="tab-1" class="tab-pane active">
+                                                            <div class="p-m">
+                                                                <div class="row">
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海虹桥机场</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-primary">上海虹桥机场</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海虹桥机场</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海虹桥机场</a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tab-2" class="tab-pane">
+                                                            <div class="p-m">
+                                                                <div class="row">
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海东站</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海南站</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海西站</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海北站</a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tab-3" class="tab-pane">
+                                                            <div class="p-m">
+                                                                <div class="row">
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海浦东分公司</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海东方明珠分公司</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海西站</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海北站</a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="tab-4" class="tab-pane">
+                                                            <div class="p-m">
+                                                                <div class="row">
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海金融街88号楼401室</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海高桥街41号院</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海滨海路01号院</a></div>
+                                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海步行街南侧9号楼1室</a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="checkbox checkbox-info checkbox-circle m-t-none">
+                                            <input id="checkbox8" type="checkbox" checked="">
+                                            <label for="checkbox8">
+                                                仅选择协议酒店
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center m-t-lg">
+                                    <a href="ravelRecommendation.html" class="btn btn-w-m btn-warning">提交</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="panel">
+                        <h2 class="m-t-none">我的行程</h2>
+                        <div class="panel panel-basic">
+                            <div class="panel-body f14">
+                                <ul class="list-unstyled">
+                                    <li>3月8日-3月9日</li>
+                                    <li>上海-杭州</li>
+                                    <li>车用油销售会</li>
+                                </ul>
+                                <div class="text-right"><a href="#">详情>></a></div>
+                            </div>
+                        </div>
+                        <div class="panel panel-basic">
+                            <div class="panel-body f14">
+                                <ul class="list-unstyled">
+                                    <li>3月8日-3月9日</li>
+                                    <li>上海-杭州</li>
+                                    <li>车用油销售会</li>
+                                </ul>
+                                <div class="text-right"><a href="#">详情>></a></div>
+                            </div>
+                        </div>
+                        <div class="panel panel-basic">
                             <div class="panel-body f14">
                                 <ul class="list-unstyled">
                                     <li>3月8日-3月9日</li>
@@ -138,7 +406,25 @@
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <!-- Custom and plugin javascript -->
     <script src="js/plugins.js"></script>
+    <script src="js/plugins/bootstrap-select/bootstrap-select.js"></script>
+    <script src="js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
     <script>
+    $("#ionrange_1").ionRangeSlider({
+        min: 0,
+        max: 24,
+        type: 'double',
+        prefix: "",
+        prettify: false,
+        hasGrid: true
+    });
+    $("#ionrange_2").ionRangeSlider({
+        min: 0,
+        max: 24,
+        type: 'double',
+        prefix: "",
+        prettify: false,
+        hasGrid: true
+    });
     </script>
 </body>
 

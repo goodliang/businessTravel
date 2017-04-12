@@ -31,7 +31,7 @@ Google Web Fonts
 
 /* Iconfont */
 
-@import url('http://at.alicdn.com/t/font_8n78waujkgvcayvi.css');
+@import url('http://at.alicdn.com/t/font_egn7o42tsmea5rk9.css');
 
 /* ================================================
 Main Css
@@ -53,3 +53,6 @@ Main Css
 /* ================================================
 Plugin Css
 ================================================ */
+
+@import url('plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css');
+@import url('plugins/bootstrap-select/bootstrap-select.css');

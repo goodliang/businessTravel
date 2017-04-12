@@ -16,6 +16,7 @@
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
                         <div class="dropdown profile-element"> <span class="small-img">
+                            <div class="btn btn-primary btn-circle gender"><i class="iconfont icon-nan"></i></div>
                             <img alt="image" class="img-circle" src="img/profile_small.jpg" />
                              </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -34,11 +35,60 @@
                             唐
                         </div>
                     </li>
-                    <li class="big-item"><a href="bookingTravel.html"><i class="iconfont icon-iconfont"></i><span>差旅预订</span></a></li>
-                    <li class="big-item"><a href="#"><i class="iconfont icon-dingdan"></i><span>订单中心</span></a></li>
-                    <li class="big-item"><a href="#"><i class="iconfont icon-shenpi"></i><span>审批中心</span></a></li>
-                    <li class="big-item"><a href="#"><i class="iconfont icon-tijianbaogao"></i><span>报告中心</span></a></li>
-                    <li class="big-item"><a href="#"><i class="iconfont icon-zhanghu"></i><span>账户管理</span></a></li>
+                    <li class="big-item"><a href="bookingTravel.html"><i class="iconfont icon-iconfont"></i><span class="nav-label">差旅预订</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-lishihangcheng"></i><span class="nav-label">我的行程</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-dingdan"></i><span class="nav-label">订单中心</span></a></li>
+                    <li class="big-item">
+                        <a href="#"><i class="iconfont icon-shenpi"></i><span class="nav-label">审批中心</span><span class="label label-warning pull-right">24</span></a>
+                    </li>
+                    <li class="big-item">
+                        <a href="#"><i class="iconfont icon-tijianbaogao"></i> <span class="nav-label">报告中心</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="#">节省明细</a></li>
+                            <li>
+                                <a href="#">机票<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">机票消费</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">舱位统计</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">承运商</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">火车票<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">火车票消费</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">座位统计</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">酒店<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">洒店消费</a></li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-zhanghu"></i><span class="nav-label">账户管理</span></a></li>
                 </ul>
             </div>
         </nav>
@@ -51,48 +101,6 @@
                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i> </a>
                 </div>
                 <ul class="nav navbar-top-links navbar-right">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                            <i class="fa fa-bell"></i> <span class="label label-warning">8</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-alerts">
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
-                                        <span class="pull-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                        <span class="pull-right text-muted small">12 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                        <span class="pull-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <div class="text-center link-block">
-                                    <a href="#">
-                                        <strong>See All Alerts</strong>
-                                        <i class="fa fa-angle-right"></i>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
                     <li>
                         <a href="login.html">
                             <i class="fa fa-sign-out"></i> 安全退出
@@ -101,40 +109,6 @@
                 </ul>
             </nav>
             <div class="wrapper wrapper-content animated fadeInRight">
-                <div class="row home-panel-boder m-t-lg">
-                    <div class="col-lg-2">
-                        <div class="ibox">
-                            <div class="ibox-content">
-                                <h1 class="no-margins">+</h1>
-                                <p class="f18 m-b-none">创建新的行程</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="ibox">
-                            <div class="ibox-content">
-                                <h1 class="no-margins">56</h1>
-                                <p class="f18 m-b-none">待审批的订单</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="ibox">
-                            <div class="ibox-content">
-                                <h1 class="no-margins">11</h1>
-                                <p class="f18 m-b-none">待审批费用</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="ibox">
-                            <div class="ibox-content">
-                                <h1 class="no-margins">44</h1>
-                                <p class="f18 m-b-none">已完成订单</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <h3>个人数据</h3>
                 <div class="row">
                     <div class="col-lg-4">
@@ -153,7 +127,7 @@
                                 <h5>Top10 差旅城市 【次数】</h5>
                             </div>
                             <div class="ibox-content">
-                                <div id="ct-chart2" class="ct-perfect-fourth"></div>
+                                <div id="topCityCharts" class="ct-perfect-fourth"></div>
                             </div>
                         </div>
                     </div>
@@ -183,7 +157,7 @@
                     <div class="col-lg-4">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
-                                <h5>前十目的地消费情况（单位：千元）</h5>
+                                <h5>前十目的地消费情况（单位：元）</h5>
                             </div>
                             <div class="ibox-content">
                                 <div id="ct-chart5" class="ct-perfect-fourth"></div>
@@ -193,7 +167,7 @@
                     <div class="col-lg-4">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
-                                <h5>我本月（2017.03）的差旅总花费</h5>
+                                <h5>前五部门消费情况</h5>
                             </div>
                             <div class="ibox-content">
                                 <div id="ct-chart6" class="ct-perfect-fourth"></div>
@@ -218,136 +192,10 @@
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <!-- Custom and plugin javascript -->
     <script src="js/plugins.js"></script>
-    <script src="js/plugins/pace/pace.min.js"></script>
-    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
     <!-- ChartJS-->
-    <script src="js/plugins/chartist/chartist.min.js"></script>
-    <script>
-    $(document).ready(function() {
-
-
-        // Simple line
-
-        new Chartist.Line('#ct-chart1', {
-            labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-            series: [
-                [12, 9, 7, 8, 5],
-                [2, 1, 3.5, 7, 3],
-                [1, 3, 4, 5, 6]
-            ]
-        }, {
-            fullWidth: true,
-            chartPadding: {
-                right: 40
-            }
-        });
-
-
-        // Line scatter diagram
-
-        var times = function(n) {
-            return Array.apply(null, new Array(n));
-        };
-
-        var data = times(26).map(Math.random).reduce(function(data, rnd, index) {
-            data.labels.push(index + 1);
-            data.series.forEach(function(series) {
-                series.push(Math.random() * 100)
-            });
-
-            return data;
-        }, {
-            labels: [],
-            series: times(4).map(function() {
-                return new Array()
-            })
-        });
-
-        var options = {
-            showLine: false,
-            axisX: {
-                labelInterpolationFnc: function(value, index) {
-                    return index % 13 === 0 ? 'W' + value : null;
-                }
-            }
-        };
-
-        new Chartist.Line('#ct-chart2', data, options);
-
-
-        // Stocked bar chart
-
-        new Chartist.Bar('#ct-chart3', {
-            labels: ['Q1', 'Q2', 'Q3', 'Q4'],
-            series: [
-                [800000, 1200000, 1400000, 1300000],
-                [200000, 400000, 500000, 300000],
-                [100000, 200000, 400000, 600000]
-            ]
-        }, {
-            stackBars: true,
-            axisY: {
-                labelInterpolationFnc: function(value) {
-                    return (value / 1000) + 'k';
-                }
-            }
-        }).on('draw', function(data) {
-            if (data.type === 'bar') {
-                data.element.attr({
-                    style: 'stroke-width: 30px'
-                });
-            }
-        });
-
-
-        // Stocked horizontal bar
-
-        new Chartist.Bar('#ct-chart4', {
-            labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-            series: [
-                [5, 4, 3, 7, 5, 10, 3],
-                [3, 2, 9, 5, 4, 6, 4]
-            ]
-        }, {
-            seriesBarDistance: 10,
-            reverseData: true,
-            horizontalBars: true,
-            axisY: {
-                offset: 70
-            }
-        });
-
-
-        // Simple pie chart
-
-        var data = {
-            series: [5, 3, 4]
-        };
-
-        var sum = function(a, b) {
-            return a + b
-        };
-
-        new Chartist.Pie('#ct-chart5', data, {
-            labelInterpolationFnc: function(value) {
-                return Math.round(value / data.series.reduce(sum) * 100) + '%';
-            }
-        });
-
-        // Gauge chart
-
-        new Chartist.Pie('#ct-chart6', {
-            series: [20, 10, 30, 40]
-        }, {
-            donut: true,
-            donutWidth: 60,
-            startAngle: 270,
-            total: 200,
-            showLabel: false
-        });
-
-    });
-    </script>
+    <script src="js/plugins/echarts/echarts.min.js"></script>
+    <script src="js/plugins/echarts/china.js"></script>
+    <script src="js/pages/index_charts.js"></script>
 </body>
 
 </html>
