@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会唐商旅采购系统</title>
+    <link href="css/root.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+
+<body class="body-bg">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side navbar-left-blue" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span class="small-img">
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="text-white f18 font-bold">天小雨</strong><b class="caret text-white"></b>
+                             </span> <span class="text-white text-xs block">xiaoyu_wu@eventown.com </span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="#">个人信息</a></li>
+                                <li><a href="#">账户安全</a></li>
+                                <li><a href="#">我的临时差旅人</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">安全退出</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            唐
+                        </div>
+                    </li>
+                    <li class="big-item"><a href="bookingTravel.html"><i class="iconfont icon-iconfont"></i><span>差旅预订</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-dingdan"></i><span>订单中心</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-shenpi"></i><span>审批中心</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-tijianbaogao"></i><span>报告中心</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-zhanghu"></i><span>账户管理</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper">
+            <nav class="navbar navbar-fixed-top nav-blue" role="navigation">
+                <div class="navbar-header">
+                    <div class="navbar-logo">
+                        <a href="/"><img src="img/sl_logo_small.png"></a>
+                    </div>
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i> </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell"></i> <span class="label label-warning">8</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                        <span class="pull-right text-muted small">12 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="#">
+                                        <strong>See All Alerts</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> 安全退出
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="wrapper wrapper-content animated fadeInRight container">
+                <!-- 内容区 -->
+                <p class="path">
+                    <a href="#"><i class="fa fa-chevron-left"></i>返回&nbsp;</a>
+                    <span>审批号 29292023</span>
+                </p>
+                <div class="well well-lg">
+                    <div class="row">
+                        <div class="col-lg-2">创建联系人 : 吴小雨</div>
+                        <div class="col-lg-2">创建时间 : 2017-3-3 15:37</div>
+                        <div class="col-lg-2">状态 : 已审批</div>
+                        <div class="seal_pass">
+                            <span style="position: absolute;top:15px;left: 11px;font-weight: 100;">已通过<br>审批</span>
+                        </div><br><br>
+                        <div class="col-lg-10">差旅人 : 吴小雨</div><br><br>
+                        <div class="col-lg-2">
+                            火车票 <span>&yen;110</span> ( 财务部 )
+                        </div>
+                        <div class="col-lg-2 col-lg-offset-1">
+                            酒店 <span>&yen;480</span> ( 财务部 )
+                        </div>
+                        <div class="col-lg-3 col-lg-offset-1" style="text-align: left;">
+                            <span style="margin-right: 20px;">总费用</span> 
+                            <h1 class="expense">¥1770</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2>
+                            <i class="fa fa-taxi"></i>
+                            预定的交通
+                            <a class="fa fa-chevron-circle-down" href="#transportation" data-toggle="collapse" aria-expanded="false"></a>
+                        </h2>
+                        <div id="transportation" class="collapse" aria-expanded="false" >
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <td>车次</td>
+                                        <td>发/到时间</td>
+                                        <td>发/到站</td>
+                                        <td>耗时</td>
+                                        <td>票价/座位等级</td>
+                                        <td>剩余票数</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>G101</td>
+                                        <td>06:44</td>
+                                        <td><p class="starting">始</p>北京南站</td>
+                                        <td rowspan="2">5小时54分钟</td>
+                                        <td><span>&yen;553</span></td>
+                                        <td rowspan="2">余99张</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">经停站</a></td>
+                                        <td>12:39</td>
+                                        <td><p class="termination">终</p>上海虹桥</td>
+                                        <td>二等座</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <td>车次</td>
+                                        <td>发/到时间</td>
+                                        <td>发/到站</td>
+                                        <td>耗时</td>
+                                        <td>票价/座位等级</td>
+                                        <td>剩余票数</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>G7</td>
+                                        <td>19:00</td>
+                                        <td><p class="starting">始</p>上海虹桥</td>
+                                        <td rowspan="2">4小时56分钟</td>
+                                        <td><span>&yen;553</span></td>
+                                        <td rowspan="2">余99张</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">经停站</a></td>
+                                        <td>23:56</td>
+                                        <td><p class="termination">终</p>北京南站</td>
+                                        <td>二等座</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        </h2>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2>
+                            <i class="fa fa-taxi"></i>
+                            预定的住宿
+                            <a class="fa fa-chevron-circle-down" href="#reservation" data-toggle="collapse" aria-expanded="false"></a>
+                        </h2>
+                        <div id="reservation" class="collapse" aria-expanded="false">
+                            <table>
+                                <tr>
+                                    <td rowspan="2"> <img src="img/profile_small.jpg" alt="获取失败~"> </td>
+                                    <td>浦江精选酒店 ( 上海静安寺地铁站点 ) ( 原南京西路店 )</td>
+                                    <td><p>协议酒店</p></td>
+                                    <td>三星</td>
+                                </tr>
+                                <tr>
+                                    <td>上海 静安区 南京西路1856号4楼 , 近乌鲁木齐路 <a href="#" style="margin-left: 15px;">查看地图</a></td>
+                                    <td></td>
+                                    <td><a href="#">更多详情 &gt; &gt;</a></td>
+                                </tr>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>入住日期</th>
+                                        <th>离店日期</th>
+                                        <th>入住天数</th>
+                                        <th>房型</th>
+                                        <th>床型</th>
+                                        <th>早餐</th>
+                                        <th>宽带</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2017-3-5</td>
+                                        <td>2017-3-7</td>
+                                        <td>2晚</td>
+                                        <td>大床房B (内宾)</td>
+                                        <td>单人床</td>
+                                        <td>无早</td>
+                                        <td>免费</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <a href="#">特殊需要</a>
+                                            <a href="#">取消政策</a>
+                                            <a href="#">担保信息</a>
+                                        </td>
+                                        <td colspan="5">
+                                            <div>协议价平均每晚：<b>&yen; &nbsp;240.00</b></div>
+                                            <div>总价：<b>&yen; &nbsp;480.00</b> <span>( 含税和费￥0.00 )</span></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>审批人</th>
+                            <th>审批时间</th>
+                            <th>审批结果</th>
+                            <th>备注</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>李 辉</td>
+                            <td> &minus; </td>
+                            <td><span class="pass">审批通过</span></td>
+                            <td> &minus; </td>
+                        </tr>
+                        <tr>
+                            <td>张海栋</td>
+                            <td> &minus; </td>
+                            <td><span class="pass">审批通过</span></td>
+                            <td> &minus; </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="pass btn btn-success">打印</button>
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    Design and Developed by <a href="#">会唐网</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> Example Company &copy; 2007-2017
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/plugins.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

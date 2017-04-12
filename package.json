@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "pm2  start ./bin/www && gulp",
+    "start": "pm2 start ./bin/www && gulp",
     "restart": "pm2 restart all   ./bin/www",
     "sever": " pm2  start ./bin/www",
     "stop": " pm2 stop all",

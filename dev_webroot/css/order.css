@@ -1,0 +1,362 @@
+div>div.row{
+	background-color:#fff;
+	padding: 10px; 
+}
+form>div>label,table>thead>tr>th{
+	font-weight: normal;
+	font-size: 16px;
+	margin: 5px;
+}
+input{
+	margin:0 3px; 
+}
+input.btn-success{
+	margin-top: 30px;
+}
+form.form-inline{
+	margin-bottom: 35px;
+}
+table.table-hover tr{
+	padding: 5px 0;
+}
+table.table-hover td:first-child{
+	color: #31C27C;
+}
+table.table-hover td>span{
+	color: #fff;
+	border-radius: 3px;
+}
+table.table-responsive>thead{
+	background-color: #E4E4E4;
+}
+table.table-responsive>tbody{
+	background-color: #fff;
+}
+table.table-responsive td,table.table-responsive th{
+	text-align: center;
+}
+div.lord{
+	border: 1px solid #47B4FC;
+	background-color: #D4E7F6;
+	padding: 8px 10px;
+}
+div.lord>p,div.pull-right>h3{
+	display: inline-block;
+	font-weight: normal;
+}
+div.lord div.pull-right>h3{
+	color: #FF3366;
+	font-size: 16pt;
+}
+div.pull-right>p{
+	font-size: 12px;
+	color: #999999;
+	text-align: right;
+}
+div.moveDate{
+	display: inline-block;
+	border:1px solid #ccc; 
+	padding:7px;
+	width: 125px;
+	height: 74px;
+	overflow: hidden;
+}
+div.moveDate>h2{
+	display: inline-block;
+	float: right;
+	margin:20px;
+	font-size: 35px;
+	font-weight: bold;
+}
+div.panel-body{
+	padding-left: 45px;
+}
+div.panel-body>table> td{
+	margin: 10px;
+}
+div.panel-body>div.row{
+	padding: 0;
+}
+div.panel-body>table  tr>td:first-child{
+	text-align: right;
+	vertical-align: top;
+	padding: 0px 20px 0px 30px;
+}
+div.panel-body >table td>h2{
+	padding: 0;
+	margin: 0;
+}
+div.panel-body>h2>a{
+	color: #31C27C;
+	font-size: 23px;
+	margin-left: 7px;
+}
+div.moveDate>h2,div.moveDate>time,div.moveDate>span{
+	vertical-align: middle;
+}
+p.path{
+	margin: 20px;
+}
+p.path>span{
+	font-size: 20px;
+	margin-left: 15px;
+}
+div.well-lg,div.well-lg>div.row{
+	background-color: #D4E7F6;
+	border-color: #47B4FC;
+	font-size: 13px;
+}
+div.panel-heading{
+	background-color: #E4E4E4;
+	font-size: 20px;
+}
+i.fa{
+	color: #0099FF;
+	margin-right: 10px;
+}
+form.form-horizontal div.col-lg-4{
+	text-align: center;
+	margin-top: 20px;
+	height: 20px;
+}
+form.form-horizontal div.col-lg-4>label{
+	width: 100px;
+	text-align: right;
+	font-size: 14px;
+}
+form.form-horizontal div.col-lg-4>input{
+	width: 200px;
+}
+form.form-horizontal div.col-lg-3,form.form-horizontal div.col-lg-1{
+	margin-top: 25px;
+	height: 30px;
+}
+form.form-horizontal div.col-lg-3>input{
+	width: 80px;
+}
+div.tab-content table.table{
+	margin-top: 30px;
+	font-size: 14px;
+}
+div.tab-content table.table>tbody td{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+}
+table.table>tbody>tr>td>span{
+	display: inline-block;
+	border-radius: 3px;
+	padding:3px 10px;
+}
+.pass{
+	background-color: #31C27C;
+	color: #fff;
+}
+.deny{
+	background-color: #FF0000;
+	color: #fff;
+}
+div.collapse>table.table td{
+	vertical-align: middle;
+	font-size: 14px;
+	margin-left: 10px;
+	padding:10px;
+}
+div.collapse>table>thead>tr{
+	background-color: #D7D7D7;
+}
+div.collapse>table>tbody>tr>td{
+	border:none;
+	padding-bottom: 0;
+}
+div.collapse>table>tbody>tr span{
+	font-size: 22px;
+	color: #FF3366;
+}
+div.collapse>table>tbody>tr:last-child>td:nth-child(4){
+	padding-left: 25px;
+	padding-top: 0;
+}
+div.collapse>table.table>tbody>tr p{
+	display: inline-block;
+	margin-right: 5px;
+	border:1px solid;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.starting{
+	color: #0099FF;
+	border-color: #0099FF;
+}
+.termination{
+	color: #FF3366;
+	border-color: #FF3366;
+}
+#reservation>table:first-child td{
+	padding-top: 10px;
+	padding-left: 15px;
+}
+#reservation>table:first-child td:last-child{
+	padding-left: 30px;
+}
+#reservation>table:first-child td:first-child{
+	padding-right: 10px;
+}
+#reservation>table:first-child td:nth-child(2){
+	font-size: 17px;
+	color: #333;
+}
+#reservation>table p{
+	margin: 0;
+	display: inline-block;
+	border:1px solid #31C27C;
+	border-radius: 5px;
+	color: #31C27C;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+#reservation>table.table{
+	margin-top: 15px;
+}
+#reservation>table.table td,#reservation>table.table th{
+	font-size: 15px;
+}
+#reservation>table.table td>a{
+	margin-right: 15px;
+}
+#reservation>table.table tr:last-child td:last-child{
+	text-align: right;
+	padding-right: 20px;
+}
+#reservation>table.table td>div{
+	display: inline-block;
+	margin-left: 20px;
+}
+#reservation>table.table td b{
+	color: #FF3366;
+	font-size: 22px;
+	font-weight: normal;
+}
+#reservation>table.table td span{
+	font-weight: 400;
+	font-size: 12px;
+	color: #999;
+}
+button.pass{
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 18px;
+	margin:20px 50%;
+}
+img.photograph{
+	margin: 40px;
+}
+#personalInformation .col-lg-5{
+	margin-top: 13px;
+}
+#personalInformation .col-lg-5>input{
+	margin-top: -10px;
+}
+form.form-horizontal.col-lg-8{
+	margin-top: 40px;
+}
+#personalInformation input.btn-success{
+	margin: 0;
+	margin-top: -20px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+div.standard{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+div.standard>p{
+	background-color: #F2F2F2;
+	padding:8px 45px;
+	font-size: 16px
+}
+div.standard>div{
+	margin-left: 200px;
+	margin-top: 30px;
+
+}
+div.standard>div>span{
+	margin-right: 60px;
+	font-size: 14px;
+}
+#accountSecurity input.btn{
+	margin-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#myTemporaryTravel>div.col-lg-9{
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+#myTemporaryTravel>div>button{
+	margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 16px;
+	border:1px solid #ccc;
+}
+#myTemporaryTravel>div>button.btn-success{
+	border:none;
+}
+#myTemporaryTravel>div>button.append{
+	border:1px dashed #FF9933;
+	color: #FF9933;
+}
+#myTemporaryTravel form div.col-lg-4{
+	margin-top: 5px;
+}
+#myTemporaryTravel form span.control-label{
+	font-size: 16px;
+}
+#myTemporaryTravel form div.form-group{
+	margin:20px;
+}
+div.tab-content form div.form-group label>i{
+	color:#31C27C ;
+}
+#myTemporaryTravel input.btn{
+	margin-top: 0;
+	margin-right: 15px;
+	font-size: 16px;
+}
+.expense{
+	display: inline-block;
+	color: #FF3366;
+	font-weight: 500;
+	margin: 0;
+}
+.seal_success{
+	width: 80px;
+	height: 80px;
+	border:2px solid #B9F1B9;
+	border-radius: 50%;
+	float: right;
+	color: #B9F1B9;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	position: relative;
+	transform: rotate(-45deg);
+	margin-right: 60px;
+	margin-top: 7px;
+}
+.seal_pass{
+	width: 80px;
+	height: 80px;
+	border: 4px solid #86D7BA;
+	border-radius: 50%;
+	float: right;
+	color: #86D7BA;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	position: relative;
+	transform: rotate(45deg);
+	margin-right: 25px;
+	margin-top: -15px;
+}

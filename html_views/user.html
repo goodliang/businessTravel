@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会唐商旅采购系统</title>
+    <link href="css/root.css" rel="stylesheet">
+    <link href="css/order.css" rel="stylesheet">
+</head>
+
+<body class="body-bg">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side navbar-left-blue" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span class="small-img">
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="text-white f18 font-bold">天小雨</strong><b class="caret text-white"></b>
+                             </span> <span class="text-white text-xs block">xiaoyu_wu@eventown.com </span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="#">个人信息</a></li>
+                                <li><a href="#">账户安全</a></li>
+                                <li><a href="#">我的临时差旅人</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">安全退出</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            唐
+                        </div>
+                    </li>
+                    <li class="big-item"><a href="bookingTravel.html"><i class="iconfont icon-iconfont"></i><span>差旅预订</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-dingdan"></i><span>订单中心</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-shenpi"></i><span>审批中心</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-tijianbaogao"></i><span>报告中心</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-zhanghu"></i><span>账户管理</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper">
+            <nav class="navbar navbar-fixed-top nav-blue" role="navigation">
+                <div class="navbar-header">
+                    <div class="navbar-logo">
+                        <a href="/"><img src="img/sl_logo_small.png"></a>
+                    </div>
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i> </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell"></i> <span class="label label-warning">8</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                        <span class="pull-right text-muted small">12 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="#">
+                                        <strong>See All Alerts</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> 安全退出
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="wrapper wrapper-content animated fadeInRight container">
+                <!-- 内容区 -->
+                <h2>订单中心</h2>
+                <div class="row" style="background: #fff;">
+                    <form action="#" class="form-inline row ">
+                        <div class="form-group col-lg-2">
+                            <label for="examineApprove">审批号</label><br>
+                            <input id="examineApprove" name="examineApprove" type="text" class="form-control" placeholder="输入审批号">
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label for="approvalAtatus">审批状态</label><br>
+                            <select name="approvalAtatus" id="approvalAtatus" class="form-control">
+                                <option value="all">全部</option>
+                                <option value="notSubmit">未提交</option>
+                                <option value="submitted">已提交(审核中)</option>
+                                <option value="pass">审批通过</option>
+                                <option value="deny">审批拒绝</option>
+                                <option value="finish_then">已完成(已出票)</option>
+                                <option value="finish_not">已完成(未出票)</option>
+                                <option value="canel">已取消</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label for="peopleTravelName">差旅人姓名</label><br>
+                            <input id="peopleTravelName" name="peopleTravelName" type="text" class="form-control" placeholder="差旅人姓名">
+                        </div>
+                        <div class="form-group col-lg-4 form-inline">
+                            <label for="">创建日期</label><br>
+                            <input type="date" class="form-control">至<input type="date" class="form-control">
+                        </div>
+                        <input type="submit" value="查询" class="btn btn-success">
+                    </form>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>审批号</th>
+                                <th>审批状态</th>
+                                <th>创建人</th>
+                                <th>差旅人</th>
+                                <th>创建时间</th>
+                                <th>操作</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1701091882</td>
+                                <td><span>未提交</span></td>
+                                <td>吴小雨</td>
+                                <td>吴小雨</td>
+                                <td><time>2017-02-09 15:35</time></td>
+                                <td><a href="#">查看</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1701091882</td>
+                                <td><span class="bg-primary">已提交(审核中)</span></td>
+                                <td>吴小雨</td>
+                                <td>吴小雨</td>
+                                <td><data> 2017-02-09 15:35</data></td>
+                                <td><a href="#">查看</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1701091882</td>
+                                <td><span class="bg-success">审批通过</span></td>
+                                <td>吴小雨</td>
+                                <td>吴小雨</td>
+                                <td>2017-02-09 15:35</td>
+                                <td><a href="#">查看</a></td>
+                                <td><a href="#">催审</a></td>
+                            </tr>
+                            <tr>
+                                <td>1701091882</td>
+                                <td><span class="bg-danger">审批拒绝</span></td>
+                                <td>吴小雨</td>
+                                <td>吴小雨</td>
+                                <td>2017-02-09 15:35</td>
+                                <td><a href="#">查看</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1701091882</td>
+                                <td><span class="bg-warning">已取消出差</span></td>
+                                <td>吴小雨</td>
+                                <td>吴小雨</td>
+                                <td>2017-02-09 15:35</td>
+                                <td><a href="#">删除</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1701091882</td>
+                                <td><span class="bg-info">已完成(已出票)</span></td>
+                                <td>吴小雨</td>
+                                <td>吴小雨</td>
+                                <td>2017-02-09 15:35</td>
+                                <td><a href="#">查看</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1701091882</td>
+                                <td><span class="bg-info">已完成(已出票)</span></td>
+                                <td>吴小雨</td>
+                                <td>吴小雨</td>
+                                <td>2017-02-09 15:35</td>
+                                <td><a href="#">查看</a></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    Design and Developed by <a href="#">会唐网</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> Example Company &copy; 2007-2017
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/plugins.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
