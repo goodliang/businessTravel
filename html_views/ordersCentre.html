@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会唐商旅采购系统</title>
+    <link href="css/root.css" rel="stylesheet">
+    <link href="css/order.css" rel="stylesheet">
+</head>
+
+<body class="body-bg">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side navbar-left-blue" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span class="small-img">
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="text-white f18 font-bold">天小雨</strong><b class="caret text-white"></b>
+                             </span> <span class="text-white text-xs block">xiaoyu_wu@eventown.com </span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="#">个人信息</a></li>
+                                <li><a href="#">账户安全</a></li>
+                                <li><a href="#">我的临时差旅人</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">安全退出</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            唐
+                        </div>
+                    </li>
+                    <li class="big-item"><a href="bookingTravel.html"><i class="iconfont icon-iconfont"></i><span>差旅预订</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-dingdan"></i><span>订单中心</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-shenpi"></i><span>审批中心</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-tijianbaogao"></i><span>报告中心</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-zhanghu"></i><span>账户管理</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper">
+            <nav class="navbar navbar-fixed-top nav-blue" role="navigation">
+                <div class="navbar-header">
+                    <div class="navbar-logo">
+                        <a href="/"><img src="img/sl_logo_small.png"></a>
+                    </div>
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i> </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell"></i> <span class="label label-warning">8</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                        <span class="pull-right text-muted small">12 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                        <span class="pull-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="#">
+                                        <strong>See All Alerts</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> 安全退出
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="wrapper wrapper-content animated fadeInRight container">
+                <!-- 内容区 -->
+                <h2>订单中心</h2>
+                <div class="row" id="indent_centre">
+                    <ul class="nav nav-tabs">
+                        <li data-toggle="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li class="active">
+                            <a href="#grogshop" data-toggle="tab">酒店订单</a>
+                        </li>
+                        <li>
+                            <a href="#passengerTicket"  data-toggle="tab">机票订单</a>
+                        </li>
+                        <li>
+                            <a href="#railwayTicket"  data-toggle="tab">火车票订单</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="grogshop">
+                            <form action="" class="form-inline" style="margin: 20px 0px;">
+                                <div class="form-group">
+                                    <label for="antistop">关键字</label>
+                                    <input type="text" class="form-control" name="antistop" id="antistop" placeholder="输入城市或出差人姓名">
+                                </div>
+                                <div class="form-group">
+                                    <label for="checkInDate">入住日期</label>
+                                    <input type="date" class="form-control" name="checkInDate" id="checkInDate">
+                                    <span> &minus; </span>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="orderStatus">订单状态</label>
+                                    <select name="orderStatus" id="orderStatus" class="form-control">
+                                        <option value="">全部</option>
+                                        <option value="">待提交</option>
+                                        <option value="">确认中</option>
+                                        <option value="">房间已满</option>
+                                        <option value="">已确认</option>
+                                        <option value="">已成交</option>
+                                        <option value="">已取消</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-success">查询</button>
+                            </form>
+                            <table class="table table-hover middle">
+                                <thead>
+                                    <tr>
+                                        <th>订单号</th>
+                                        <th>订单状态</th>
+                                        <th>酒店类型</th>
+                                        <th>酒店名称</th>
+                                        <th>房型</th>
+                                        <th>入住人</th>
+                                        <th>入住时间 / 天数</th>
+                                        <th>总金额</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><p class="text-primary">201611280982</p></td>
+                                        <td><span class="confirmation">确认中</span></td>
+                                        <td class="text-muted">会唐酒店</td>
+                                        <td>北京万豪大酒店</td>
+                                        <td>标准房</td>
+                                        <td>吴小雨 &nbsp; 常思思</td>
+                                        <td>
+                                            <p>2016.11.14 ～2016.12.14</p>
+                                            <p class="text-muted">共2晚上</p>
+                                        </td>
+                                        <td>&yen;434.00</td>
+                                        <td><a href="#" class="text-success">查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="text-primary">201611280982</p></td>
+                                        <td><span class="confirmation">确认中</span></td>
+                                        <td class="text-muted">协议酒店</td>
+                                        <td>北京万豪大酒店</td>
+                                        <td>大床房</td>
+                                        <td>吴小雨</td>
+                                        <td>
+                                            <p>2016.11.14 ～2016.12.14</p>
+                                            <p class="text-muted">共2晚上</p>
+                                        </td>
+                                        <td>&yen;434.00</td>
+                                        <td><a href="#" class="text-success">查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="text-primary">201611280982</p></td>
+                                        <td><span class="confirmation">确认中</span></td>
+                                        <td class="text-muted">协议酒店</td>
+                                        <td>北京万豪大酒店</td>
+                                        <td>大床房</td>
+                                        <td>吴小雨</td>
+                                        <td>
+                                            <p>2016.11.14 ～2016.12.14</p>
+                                            <p class="text-muted">共2晚上</p>
+                                        </td>
+                                        <td>&yen;434.00</td>
+                                        <td><a href="#" class="text-success">查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="text-primary">201611280982</p></td>
+                                        <td><span class="confirmation bargain">已成交</span></td>
+                                        <td class="text-muted">协议酒店</td>
+                                        <td>北京万豪大酒店</td>
+                                        <td>大床房</td>
+                                        <td>吴小雨</td>
+                                        <td>
+                                            <p>2016.11.14 ～2016.12.14</p>
+                                            <p class="text-muted">共2晚上</p>
+                                        </td>
+                                        <td>&yen;434.00</td>
+                                        <td><a href="#" class="text-success">查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="text-primary">201611280982</p></td>
+                                        <td><span class="confirmation cancel">已取消</span></td>
+                                        <td class="text-muted">协议酒店</td>
+                                        <td>北京万豪大酒店</td>
+                                        <td>大床房</td>
+                                        <td>吴小雨</td>
+                                        <td>
+                                            <p>2016.11.14 ～2016.12.14</p>
+                                            <p class="text-muted">共2晚上</p>
+                                        </td>
+                                        <td>&yen;434.00</td>
+                                        <td><a href="#" class="text-success">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="passengerTicket">
+                            <form action="" class="form-inline" style="margin: 20px 0px;">
+                                <div class="form-group">
+                                    <label for="antistop">关键字</label>
+                                    <input type="text" class="form-control" name="antistop" id="antistop" placeholder="输入城市或出差人姓名">
+                                </div>
+                                <div class="form-group">
+                                    <label for="checkInDate">入住日期</label>
+                                    <input type="date" class="form-control" name="checkInDate" id="checkInDate">
+                                    <span> &minus; </span>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="orderStatus">订单状态</label>
+                                    <select name="orderStatus" id="orderStatus" class="form-control">
+                                        <option value="">全部</option>
+                                        <option value="">待提交</option>
+                                        <option value="">确认中</option>
+                                        <option value="">房间已满</option>
+                                        <option value="">已确认</option>
+                                        <option value="">已成交</option>
+                                        <option value="">已取消</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-success">查询</button>
+                            </form>
+                            <table class="table table-hover middle">
+                                <thead>
+                                    <tr>
+                                        <th>订单号 / 预定日期</th>
+                                        <th>订单状态</th>
+                                        <th>航班号</th>
+                                        <th>舱 位</th>
+                                        <th>乘机人</th>
+                                        <th>出发时间</th>
+                                        <th>行程</th>
+                                        <th>总金额</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="text-primary">201611280982</p>
+                                            <p class="text-muted">2017.10.01</p>
+                                        </td>
+                                        <td><span class="confirmation">出票中</span></td>
+                                        <td class="text-muted">中国国航 &nbsp; CA302</td>
+                                        <td>经济舱</td>
+                                        <td>吴小雨</td>
+                                        <td>2017.10.01 &nbsp;06:30</td>
+                                        <td>上海-北京(单程)</td>
+                                        <td>&yen;434.00</td>
+                                        <td><a href="#" class="text-success">查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-primary">201611280982</p>
+                                            <p class="text-muted">2017.10.01</p>
+                                        </td>
+                                        <td><span class="confirmation">出票中</span></td>
+                                        <td class="text-muted">中国国航 &nbsp; CA302</td>
+                                        <td>经济舱</td>
+                                        <td>吴小雨</td>
+                                        <td>2017.10.01 &nbsp;06:30</td>
+                                        <td>上海-北京(单程)</td>
+                                        <td>&yen;434.00</td>
+                                        <td><a href="#" class="text-success">查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-primary">201611280982</p>
+                                            <p class="text-muted">2017.10.01</p>
+                                        </td>
+                                        <td><span class="confirmation canceled">已退票/取消</span></td>
+                                        <td class="text-muted">中国国航 &nbsp; CA302</td>
+                                        <td>经济舱</td>
+                                        <td>吴小雨</td>
+                                        <td>2017.10.01 &nbsp;06:30</td>
+                                        <td>上海-北京(单程)</td>
+                                        <td>&yen;434.00</td>
+                                        <td><a href="#" class="text-success">查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-primary">201611280982</p>
+                                            <p class="text-muted">2017.10.01</p>
+                                        </td>
+                                        <td><span class="confirmation bargain">已出票</span></td>
+                                        <td class="text-muted">中国国航 &nbsp; CA302</td>
+                                        <td>经济舱</td>
+                                        <td>吴小雨</td>
+                                        <td>2017.10.01 &nbsp;06:30</td>
+                                        <td>上海-北京(单程)</td>
+                                        <td>&yen;434.00</td>
+                                        <td>
+                                            <a href="#" class="text-success">查看</a>
+                                            <p style="color: red;">退改签</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-primary">201611280982</p>
+                                            <p class="text-muted">2017.10.01</p>
+                                        </td>
+                                        <td><span class="confirmation change">改签中</span></td>
+                                        <td class="text-muted">中国国航 &nbsp; CA302</td>
+                                        <td>经济舱</td>
+                                        <td>吴小雨</td>
+                                        <td>2017.10.01 &nbsp;06:30</td>
+                                        <td>上海-北京(单程)</td>
+                                        <td>&yen;434.00</td>
+                                        <td><a href="#" class="text-success">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="col-lg-12 text-center">
+                                <ul class="pagination pagination-lg">
+                                    <li class="text-muted"><a href="#" class="fa fa-angle-left"></a></li>
+                                    <li class="active text-success"><a href="#">1</a></li>
+                                    <li class="text-success"><a href="#">2</a></li>
+                                    <li class="text-success"><a href="#">3</a></li>
+                                    <li class="text-success"><a href="#">4</a></li>
+                                    <li class="text-muted"><a href="#" class="fa fa-angle-right text-muted"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="railwayTicket">
+                            <form action="" class="form-inline" style="margin: 20px 0px;">
+                                <div class="form-group">
+                                    <label for="antistop">关键字</label>
+                                    <input type="text" class="form-control" name="antistop" id="antistop" placeholder="输入城市或出差人姓名">
+                                </div>
+                                <div class="form-group">
+                                    <label for="checkInDate">入住日期</label>
+                                    <input type="date" class="form-control" name="checkInDate" id="checkInDate">
+                                    <span> &minus; </span>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="orderStatus">订单状态</label>
+                                    <select name="orderStatus" id="orderStatus" class="form-control">
+                                        <option value="">全部</option>
+                                        <option value="">待提交</option>
+                                        <option value="">确认中</option>
+                                        <option value="">房间已满</option>
+                                        <option value="">已确认</option>
+                                        <option value="">已成交</option>
+                                        <option value="">已取消</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-success">查询</button>
+                            </form>
+                            <table class="table table-hover middle">
+                                <thead>
+                                    <tr>
+                                        <th>订单号 / 预定日期</th>
+                                        <th>订单状态</th>
+                                        <th>车 次</th>
+                                        <th>座 位</th>
+                                        <th>旅 客</th>
+                                        <th>出发时间</th>
+                                        <th>行 程</th>
+                                        <th>总金额</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="text-primary">201611280982</p>
+                                            <p class="text-muted">2017.10.01</p>
+                                        </td>
+                                        <td><span class="confirmation">出票中</span></td>
+                                        <td>G223</td>
+                                        <td>二等座</td>
+                                        <td>吴小雨</td>
+                                        <td>2017.10.01 &nbsp; 06:30</td>
+                                        <td>石家庄-北京</td>
+                                        <td>&yen;434.00</td>
+                                        <td><a href="#" class="text-success">查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-primary">201611280982</p>
+                                            <p class="text-muted">2017.10.01</p>
+                                        </td>
+                                        <td><span class="confirmation">出票中</span></td>
+                                        <td>G223</td>
+                                        <td>二等座</td>
+                                        <td>吴小雨</td>
+                                        <td>2017.10.01 &nbsp; 06:30</td>
+                                        <td>石家庄-北京</td>
+                                        <td>&yen;434.00</td>
+                                        <td><a href="#" class="text-success">查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-primary">201611280982</p>
+                                            <p class="text-muted">2017.10.01</p>
+                                        </td>
+                                        <td><span class="confirmation">出票中</span></td>
+                                        <td>G223</td>
+                                        <td>二等座</td>
+                                        <td>吴小雨</td>
+                                        <td>2017.10.01 &nbsp; 06:30</td>
+                                        <td>石家庄-北京</td>
+                                        <td>&yen;434.00</td>
+                                        <td><a href="#" class="text-success">查看</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="text-primary">201611280982</p>
+                                            <p class="text-muted">2017.10.01</p>
+                                        </td>
+                                        <td><span class="confirmation bargain">已出票</span></td>
+                                        <td>G223</td>
+                                        <td>二等座</td>
+                                        <td>吴小雨</td>
+                                        <td>2017.10.01 &nbsp; 06:30</td>
+                                        <td>石家庄-北京</td>
+                                        <td>&yen;434.00</td>
+                                        <td><a href="#" class="text-success">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="col-lg-12 text-center">
+                                <ul class="pagination pagination-lg">
+                                    <li class="text-muted"><a href="#" class="fa fa-angle-left"></a></li>
+                                    <li class="active text-success"><a href="#">1</a></li>
+                                    <li class="text-success"><a href="#">2</a></li>
+                                    <li class="text-success"><a href="#">3</a></li>
+                                    <li class="text-success"><a href="#">4</a></li>
+                                    <li class="text-muted"><a href="#" class="fa fa-angle-right text-muted"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    Design and Developed by <a href="#">会唐网</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> Example Company &copy; 2007-2017
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/plugins.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

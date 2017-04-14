@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>会唐商旅采购系统</title>
     <link href="css/root.css" rel="stylesheet">
-    <link href="css/order.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/order.css">
 </head>
 
 <body class="body-bg">
@@ -102,114 +102,84 @@
             </nav>
             <div class="wrapper wrapper-content animated fadeInRight container">
                 <!-- 内容区 -->
-                <h2>订单中心</h2>
-                <div class="row">
-                    <form action="#" class="form form-inline row ">
-                        <div class="form-group col-lg-2">
-                            <label for="examineApprove">审批号</label><br>
-                            <input id="examineApprove" name="examineApprove" type="text" class="form-control" placeholder="输入审批号">
-                        </div>
-                        <div class="form-group col-lg-2">
-                            <label for="approvalAtatus">审批状态</label><br>
-                            <select name="approvalAtatus" id="approvalAtatus" class="form-control">
-                                <option value="all">全部</option>
-                                <option value="notSubmit">未提交</option>
-                                <option value="submitted">已提交(审核中)</option>
-                                <option value="pass">审批通过</option>
-                                <option value="deny">审批拒绝</option>
-                                <option value="finish_then">已完成(已出票)</option>
-                                <option value="finish_not">已完成(未出票)</option>
-                                <option value="canel">已取消</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-lg-2">
-                            <label for="peopleTravelName">差旅人姓名</label><br>
-                            <input id="peopleTravelName" name="peopleTravelName" type="text" class="form-control" placeholder="差旅人姓名">
-                        </div>
-                        <div class="form-group col-lg-4 form-inline">
-                            <label for="creationDate">创建日期</label><br>
-                            <input type="date" class="form-control">至<input type="date" class="form-control">
-                        </div>
-                        <input type="submit" value="查询" class="btn btn-success">
-                    </form>
-                    <table class="table table-hover middle f14">
-                        <thead>
-                            <tr>
-                                <th>审批号</th>
-                                <th>审批状态</th>
-                                <th>创建人</th>
-                                <th>差旅人</th>
-                                <th>创建时间</th>
-                                <th>操作</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1701091882</td>
-                                <td><span class="confirmation change">未提交</span></td>
-                                <td>吴小雨</td>
-                                <td>吴小雨</td>
-                                <td><time>2017-02-09 15:35</time></td>
-                                <td><a href="#">查看</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>1701091882</td>
-                                <td><span class="bg-primary">已提交(审核中)</span></td>
-                                <td>吴小雨</td>
-                                <td>吴小雨</td>
-                                <td><data> 2017-02-09 15:35</data></td>
-                                <td><a href="#">查看</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>1701091882</td>
-                                <td><span class="pass">审批通过</span></td>
-                                <td>吴小雨</td>
-                                <td>吴小雨</td>
-                                <td>2017-02-09 15:35</td>
-                                <td><a href="#">查看</a></td>
-                                <td><a href="#">催审</a></td>
-                            </tr>
-                            <tr>
-                                <td>1701091882</td>
-                                <td><span class="deny">审批拒绝</span></td>
-                                <td>吴小雨</td>
-                                <td>吴小雨</td>
-                                <td>2017-02-09 15:35</td>
-                                <td><a href="#">查看</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>1701091882</td>
-                                <td><span class="confirmation cancel">已取消出差</span></td>
-                                <td>吴小雨</td>
-                                <td>吴小雨</td>
-                                <td>2017-02-09 15:35</td>
-                                <td><a href="#">删除</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>1701091882</td>
-                                <td><span class="confirmation">已完成(已出票)</span></td>
-                                <td>吴小雨</td>
-                                <td>吴小雨</td>
-                                <td>2017-02-09 15:35</td>
-                                <td><a href="#">查看</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>1701091882</td>
-                                <td><span class="confirmation">已完成(已出票)</span></td>
-                                <td>吴小雨</td>
-                                <td>吴小雨</td>
-                                <td>2017-02-09 15:35</td>
-                                <td><a href="#">查看</a></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <p>审批号&nbsp; 201611280982</p>
+                <div class="well well-lg">
+                    <div class="row">
+                        <div class="col-lg-2">创建人 : 吴小雨</div>
+                        <div class="col-lg-10 text-left">创建时间 : 2017-3-3 15:37</div>
+                        <div class="col-lg-2" style="margin-top: 10px;">差旅人 : 吴小雨</div>
+                    </div>
+                </div>
+                <div class="row" style="margin: 25px 0;">
+                    <div class="col-lg-12">
+                        <h3>预定的交通</h3>
+                        <table class="transportation f16">
+                            <tbody>
+                                <tr>
+                                    <td>G112</td>
+                                    <td>北京南站-上海虹桥</td>
+                                    <td><span class="expense">&yen;553</span></td>
+                                    <td class="f14 text-muted"> 消费所属成本中心：财务部 </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="f14 text-muted"> 未选择最低价原因</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>预定的酒店</h3>
+                        <table class="transportation f16">
+                            <tbody>
+                                <tr>
+                                    <td>上海四季酒店</td>
+                                    <td>入住时间：2017-2-3 至 2017-2-4  &nbsp;共1晚</td>
+                                    <td><span class="expense">&yen;445</span></td>
+                                    <td class="f14 text-muted">消费所属成本中心：财务部</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-12" style="border-bottom: 1px solid #CCCCCC;"></div>
+                    <div class="col-lg-12 text-right f16" style="padding: 15px;">
+                        总费用 &nbsp;
+                        <h1 class="expense">&yen; 998</h1>
+                    </div>
+                </div>
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <td>顺序</td>
+                            <td>审批人</td>
+                            <td>审批时间</td>
+                            <td>审批结果</td>
+                            <td>备注</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>李辉</td>
+                            <td>2017-3-23 18:02</td>
+                            <td class="text-success">已通过审批</td>
+                            <td> &minus; </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>张海东</td>
+                            <td>&minus;</td>
+                            <td>待审批</td>
+                            <td> &minus; </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="f15">审批备注 : </p>
+                <textarea class="form-control" name="" id="" cols="20" rows="3"></textarea>
+                <br><br>
+                <div class="col-lg-1 m-t-md">
+                    <a href="#" class="f14"><i class="fa fa-chevron-left"></i> 返回</a>
+                </div>
+                <div class="col-lg-10 text-center">
+                    <button type="button" class="btn f16 btn-success buttonBtn">同意</button>
+                    <button type="button" class="btn f16 btn-danger buttonBtn">拒绝</button>
                 </div>
             </div>
             <div class="footer">
