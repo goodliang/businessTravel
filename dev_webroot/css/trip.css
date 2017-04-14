@@ -12,6 +12,10 @@
     vertical-align: top !important;
 }
 
+.min-w100 {
+    min-width: 100px;
+}
+
 .refund-info-body {
     display: none;
 }
@@ -20,4 +24,31 @@
     border-bottom: 1px dotted #ddd;
     display: inline-block;
     padding: 0 10px 5px;
+}
+
+.t-price {
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 3px;
+}
+
+.t-filter-title {
+    display: inline-block;
+    padding-top: 2px;
+}
+
+.more-box {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 9;
+}
+
+.hotel-tit .tit {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.hotel-tit .star-group {
+    display: inline-block;
 }
