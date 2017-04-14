@@ -10161,6 +10161,8 @@ body.md-skin {
     padding-top: 100px;
 }
 
+.star-group {}
+
 
 /*框架修改*/
 
@@ -10311,7 +10313,27 @@ a:hover {
     background: rgba(84, 185, 204, 0.1);
 }
 
+.table.small > thead > tr > th,
+.table.small > tbody > tr > th,
+.table.small > tfoot > tr > th,
+.table.small > thead > tr > td,
+.table.small > tbody > tr > td,
+.table.small > tfoot > tr > td {
+    padding: 10px 15px;
+}
 
+.table-hover > tbody > tr > td.info:hover,
+.table-hover > tbody > tr > th.info:hover,
+.table-hover > tbody > tr.info:hover > td,
+.table-hover > tbody > tr:hover > .info,
+.table-hover > tbody > tr.info:hover > th {
+    background-color: transparent !important;
+}
+
+
+.table-stroke > tbody > tr:not(.info):hover {
+    background-color: #f5f5f5 !important;
+}
 /*新增*/
 
 .nav-blue.navbar-fixed-top+.wrapper-content {
@@ -10515,7 +10537,9 @@ body.mini-navbar .navbar-left-blue .nav.nav-third-level {
 .layui-layer-lan .layui-layer-title {
     background: #4484CE !important;
 }
-
+.layui-layer-page .layui-layer-content{
+    background: #fff;
+}
 
 /*.home-panel-boder .ibox-content {
     background: none;

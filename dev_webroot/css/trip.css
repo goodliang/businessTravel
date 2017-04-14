@@ -52,3 +52,44 @@
 .hotel-tit .star-group {
     display: inline-block;
 }
+
+.room-list-center {
+    background: #fff;
+    padding-left: 90px;
+    padding-right: 15px;
+}
+
+.room-pic-list {}
+
+.room-pic-list ul {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.room-pic-list li {
+    float: left;
+    width: 100px;
+    margin: 3px 15px 3px 0;
+}
+
+.room-pic-list li img {
+    width: 100%;
+}
+
+.room-body {
+    overflow: hidden;
+}
+
+.room-body-main {
+    margin-right: 330px;
+}
+
+.room-body-sidebar {
+    width: 314px;
+    float: right;
+    margin-top: 70px;
+    background: #fff;
+}
