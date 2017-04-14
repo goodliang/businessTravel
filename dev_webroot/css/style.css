@@ -10089,6 +10089,10 @@ body.md-skin {
 
 /*新增共用*/
 
+.por {
+    position: relative;
+}
+
 .btn-light {
     background-color: #fff;
     color: inherit;
@@ -10142,6 +10146,7 @@ body.md-skin {
 .panel-group .panel-basic .panel-heading+.panel-collapse>.panel-body {
     border-top: 0;
 }
+
 
 /*.panel-group .panel-basic .panel-heading {
     cursor: pointer;
@@ -10285,6 +10290,25 @@ a:hover {
 .table.border-none > tbody > tr > td,
 .table.border-none > tfoot > tr > td {
     border-width: 0;
+}
+
+.table-boder-top-none > tbody > tr:first-child > td {
+    border-width: 0;
+}
+
+.table>tbody>tr.info>td,
+.table>tbody>tr.info>th,
+.table>tbody>tr>td.info,
+.table>tbody>tr>th.info,
+.table>tfoot>tr.info>td,
+.table>tfoot>tr.info>th,
+.table>tfoot>tr>td.info,
+.table>tfoot>tr>th.info,
+.table>thead>tr.info>td,
+.table>thead>tr.info>th,
+.table>thead>tr>td.info,
+.table>thead>tr>th.info {
+    background: rgba(84, 185, 204, 0.1);
 }
 
 
@@ -10487,9 +10511,11 @@ body.mini-navbar .navbar-left-blue .nav.nav-third-level {
 .bootstrap-select.btn-group .dropdown-menu li a {
     outline: none !important;
 }
-.layui-layer-lan .layui-layer-title{
-    background:#4484CE !important;
+
+.layui-layer-lan .layui-layer-title {
+    background: #4484CE !important;
 }
+
 
 /*.home-panel-boder .ibox-content {
     background: none;

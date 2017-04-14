@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>会唐商旅采购系统</title>
     <link href="css/root.css" rel="stylesheet">
-    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
     <link href="css/trip.css" rel="stylesheet">
+    <link href="http://www.eventown.com/css/search.css" rel="stylesheet">
 </head>
 
 <body class="body-bg">
@@ -214,7 +214,7 @@
                                                     <br> 航班规定离站时间（含）2小时内及航班起飞后：50%退票费；
                                                 </div>
                                             </td>
-                                            <td class="text-right"><a href="#" class="btn btn-primary">更换航班</a><a href="#" class="btn btn-warning m-l-sm">删除</a></td>
+                                            <td class="text-right"><a href="#" class="btn btn-primary f-btn">更换航班</a><a href="#" class="btn btn-warning m-l-sm">删除</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -267,7 +267,7 @@
                                             <td>二等座</td>
                                             <td class="f20 font-bold text-danger">¥740</td>
                                             <td>余99张</td>
-                                            <td class="text-right"><a href="#" class="btn btn-primary">更换车次</a><a href="#" class="btn btn-warning m-l-sm">删除</a></td>
+                                            <td class="text-right"><a href="#" class="btn btn-primary t-btn">更换车次</a><a href="#" class="btn btn-warning m-l-sm">删除</a></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -287,7 +287,7 @@
                                             <td>二等座</td>
                                             <td class="f20 font-bold text-danger">¥740</td>
                                             <td>余99张</td>
-                                            <td class="text-right"><a href="#" class="btn btn-primary">更换车次</a><a href="#" class="btn btn-warning m-l-sm">删除</a></td>
+                                            <td class="text-right"><a href="#" class="btn btn-primary t-btn">更换车次</a><a href="#" class="btn btn-warning m-l-sm">删除</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -302,13 +302,14 @@
                             <table class="table middle m-b-none border-none">
                                 <tbody>
                                     <tr>
-                                        <td width="100"><img src="http://img.eventown.cn/upimg/litimg/081004/002A32O228.jpg!nw380h228" alt="" width="100"></td>
-                                        <td>
-                                            <h3><span>浦江精选酒店（上海静安寺地铁站店）（原南京西路店）</span><label class="btn btn-primary btn-xs btn-outline m-l-sm">协议酒店</label><small class="m-l-sm">三星级</small></h3>
-                                            <p><span class="text-warning">距离火车站15KM</span>&nbsp;&nbsp;|&nbsp;&nbsp;[人民广场] 黄浦区九江路619号(浙江中路路口 近南京路步行街 地铁一号线14号口)</p>
+                                        <td width="120"><img src="http://img.eventown.cn/upimg/litimg/081004/002A32O228.jpg!nw380h228" alt="" width="120" height="90"></td>
+                                        <td class="top">
+                                            <h3 class="hotel-tit"><span class="tit m-r-sm">浦江精选酒店</span><label class="btn btn-primary btn-xs btn-outline m-r-sm">协议酒店</label> <div class="star-group text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div></h3>
+                                            <p class="m-b-xs"><span class="text-warning">距离火车站15KM</span></p>
+                                            <p class="m-b-none">[欢乐谷/工业大学] 北京市朝阳区东四环北京欢乐谷东侧(地铁7号线欢乐谷景区站B口)</p>
                                         </td>
                                         <td class="f14 font-bold text-warning">92%好评</td>
-                                        <td class="text-right"><a href="#" class="btn btn-primary">更换酒店</a><a href="#" class="btn btn-warning m-l-sm">删除</a></td>
+                                        <td class="text-right"><a href="#" class="btn btn-primary h-btn">更换酒店</a><a href="#" class="btn btn-warning m-l-sm">删除</a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -367,14 +368,131 @@
                 当前用户(吴小雨)所应用的机票预订差旅规则： -经济舱 -前60分钟后60分钟内最低价航班
             </div>
         </div>
-        <table class="table table-hover middle m-b-none">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="pull-left">
+                            <div class="btn-group">
+                                <div class="btn-group">
+                                    <button data-toggle="dropdown" class="btn btn-primary btn-outline btn-sm">航空公司 <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a>
+                                                <div class="checkbox checkbox-info m-n">
+                                                    <input id="checkbox1" type="checkbox">
+                                                    <label for="checkbox1">
+                                                        中国国航
+                                                    </label>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <div class="checkbox checkbox-info m-n">
+                                                    <input id="checkbox2" type="checkbox">
+                                                    <label for="checkbox2">
+                                                        中国国航
+                                                    </label>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <div class="checkbox checkbox-info m-n">
+                                                    <input id="checkbox3" type="checkbox">
+                                                    <label for="checkbox3">
+                                                        中国国航
+                                                    </label>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button data-toggle="dropdown" class="btn btn-primary btn-outline btn-sm">起飞机场 <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a>
+                                                <div class="checkbox checkbox-info m-n">
+                                                    <input id="checkbox4" type="checkbox">
+                                                    <label for="checkbox4">
+                                                        中国国航
+                                                    </label>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button data-toggle="dropdown" class="btn btn-primary btn-outline btn-sm">到达机场 <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a>
+                                                <div class="checkbox checkbox-info m-n">
+                                                    <input id="checkbox5" type="checkbox">
+                                                    <label for="checkbox5">
+                                                        中国国航
+                                                    </label>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button data-toggle="dropdown" class="btn btn-primary btn-outline btn-sm">舱位 <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a>
+                                                <div class="checkbox checkbox-info m-n">
+                                                    <input id="checkbox6" type="checkbox">
+                                                    <label for="checkbox6">
+                                                        中国国航
+                                                    </label>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button data-toggle="dropdown" class="btn btn-primary btn-outline btn-sm">起飞时间段 <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a>
+                                                <div class="checkbox checkbox-info m-n">
+                                                    <input id="checkbox7" type="checkbox">
+                                                    <label for="checkbox7">
+                                                        中国国航
+                                                    </label>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pull-right">
+                            共<strong class="text-info f16">83</strong>条航班信息
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group m-t-sm">
+                    <span class="btn btn-outline btn-link btn-xs m-l-n-xs text-muted">已选：</span>
+                    <a class="btn btn-outline btn-default btn-xs m-r-sm">中国国航<span class="i fa fa-close m-l-xs"></span></a>
+                    <a class="btn btn-outline btn-default btn-xs m-r-sm">中国国航<span class="i fa fa-close m-l-xs"></span></a>
+                    <a class="btn btn-outline btn-default btn-xs m-r-sm">中国国航<span class="i fa fa-close m-l-xs"></span></a>
+                    <a class="btn btn-link btn-xs m-r-sm">全部撤销<span class="i fa fa-close m-l-xs"></span></a>
+                </div>
+            </div>
+        </div>
+        <table class="table middle m-b-none">
             <thead>
                 <tr class="active">
                     <th>航班信息</th>
-                    <th>出发时间<i class="iconfont f14">&#xe602;</i></th>
+                    <th>出发时间<i class="iconfont icon-sort f14 m-l-xs text-muted"></i></th>
                     <th></th>
-                    <th>到达时间</th>
-                    <th>准点率</th>
+                    <th>到达时间<i class="iconfont icon-sort-up f14 m-l-xs text-muted"></i></th>
+                    <th>准点率<i class="iconfont icon-sort-down f14 m-l-xs text-muted"></i></th>
                     <th>余票</th>
                     <th>价格
                         <!-- <small class="text-muted">（不包含机建燃油费）</small> --></th>
@@ -395,7 +513,77 @@
                     <td>有餐 | 准点率77%</td>
                     <td>102张</td>
                     <td class="f20 font-bold text-danger">¥740</td>
-                    <td class="text-right"><a href="#" class="btn btn-primary">选择</a></td>
+                    <td class="text-right"><a href="#" class="btn btn-primary m-r">选择 <span class="caret"></span></a></td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <table class="table table-boder-top-none middle m-b-none">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">
+                                        <h4><img src="http://m.tuniucdn.com/fb2/t1/G1/M00/08/6D/Cii9EVbNinCINxjgAAA-wVuEaZ8AACRoQES4gIAAD7Z262_w40_h40_c1_t0.png" width="16px" height="16px">中国国航</h4><span class="text-muted">CA302 机型：321</span></td>
+                                    <td class="text-info">退改￥212起</td>
+                                    <td class="text-warning">行李限额20KG</td>
+                                    <td>经济6.5折</td>
+                                    <td class="f20 font-bold text-danger">¥740</td>
+                                    <td class="text-right"><a href="#" class="btn btn-warning">预订</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-info">退改￥212起</td>
+                                    <td class="text-warning">行李限额20KG</td>
+                                    <td>经济6.5折</td>
+                                    <td class="f20 font-bold text-danger">¥740</td>
+                                    <td class="text-right"><a href="#" class="btn btn-warning">预订</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-info">退改￥212起</td>
+                                    <td class="text-warning">行李限额20KG</td>
+                                    <td>经济6.5折</td>
+                                    <td class="f20 font-bold text-danger">¥740</td>
+                                    <td class="text-right"><a href="#" class="btn btn-warning">预订</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="info">
+                    <td>
+                        <h4><img src="http://m.tuniucdn.com/fb2/t1/G1/M00/08/6D/Cii9EVbNinCINxjgAAA-wVuEaZ8AACRoQES4gIAAD7Z262_w40_h40_c1_t0.png" width="16px" height="16px">中国国航</h4><span class="text-muted">CA302 机型：321</span></td>
+                    <td>
+                        <h3>06:30</h3><span class="text-muted">首都机场T3</span>
+                    </td>
+                    <td class="top"><span class="flight_time">2小时15分</span></td>
+                    <td>
+                        <h3>08:50</h3><span class="text-muted">虹桥机场T2</span>
+                    </td>
+                    <td>有餐 | 准点率77%</td>
+                    <td>102张</td>
+                    <td class="f20 font-bold text-danger">¥740</td>
+                    <td class="text-right"><a href="#" class="btn btn-primary m-r">选择 <span class="caret"></span></a></td>
+                </tr>
+                <tr class="info">
+                    <td colspan="8">
+                        <table class="table table-boder-top-none middle m-b-none">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">
+                                        <h4><img src="http://m.tuniucdn.com/fb2/t1/G1/M00/08/6D/Cii9EVbNinCINxjgAAA-wVuEaZ8AACRoQES4gIAAD7Z262_w40_h40_c1_t0.png" width="16px" height="16px">中国国航</h4><span class="text-muted">CA302 机型：321</span></td>
+                                    <td class="text-info">退改￥212起</td>
+                                    <td class="text-warning">行李限额20KG</td>
+                                    <td>经济6.5折</td>
+                                    <td class="f20 font-bold text-danger">¥740</td>
+                                    <td class="text-right"><a href="#" class="btn btn-warning">预订</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-info">退改￥212起</td>
+                                    <td class="text-warning">行李限额20KG</td>
+                                    <td>经济6.5折</td>
+                                    <td class="f20 font-bold text-danger">¥740</td>
+                                    <td class="text-right"><a href="#" class="btn btn-warning">预订</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -410,10 +598,406 @@
                     <td>有餐 | 准点率77%</td>
                     <td>102张</td>
                     <td class="f20 font-bold text-danger">¥740</td>
-                    <td class="text-right"><a href="#" class="btn btn-primary">选择</a></td>
+                    <td class="text-right"><a href="#" class="btn btn-primary m-r">选择 <span class="caret"></span></a></td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <table class="table table-boder-top-none middle m-b-none">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="1">
+                                        <h4><img src="http://m.tuniucdn.com/fb2/t1/G1/M00/08/6D/Cii9EVbNinCINxjgAAA-wVuEaZ8AACRoQES4gIAAD7Z262_w40_h40_c1_t0.png" width="16px" height="16px">中国国航</h4><span class="text-muted">CA302 机型：321</span></td>
+                                    <td class="text-info">退改￥212起</td>
+                                    <td class="text-warning">行李限额20KG</td>
+                                    <td>经济6.5折</td>
+                                    <td>¥740</td>
+                                    <td class="text-right"><a href="#" class="btn btn-warning">预订</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
                 </tr>
             </tbody>
         </table>
+    </div>
+    <div class="t-layer p-m" style="display:none">
+        <div class="panel">
+            <div class="panel-body bg-warning">
+                当前用户(吴小雨)所应用的火车票票预订差旅规则： 二等座 硬卧
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row m-b-sm por">
+                    <a href="#" class="more-box">更多帅选条件<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <div class="col-md-1"><span class="t-filter-title text-muted">车型</span></div>
+                    <div class="col-md-11">
+                        <div class="btn btn-primary btn-outline btn-xs m-r-md">不限</div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                G-高铁
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                D-动车
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                T-特快
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                其它
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-b-sm">
+                    <div class="col-md-1"><span class="t-filter-title text-muted">座席</span></div>
+                    <div class="col-md-11">
+                        <div class="btn btn-primary btn-outline btn-xs m-r-md">不限</div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                商务座
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                一等座
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                二等座
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                高级软卧
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                软卧
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                硬卧
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                硬座
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-b-sm">
+                    <div class="col-md-1"><span class="t-filter-title text-muted">出发车站</span></div>
+                    <div class="col-md-11">
+                        <div class="btn btn-primary btn-outline btn-xs m-r-md">不限</div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                上海站
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                上海虹桥站
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-b-sm">
+                    <div class="col-md-1"><span class="t-filter-title text-muted">到达车站</span></div>
+                    <div class="col-md-11">
+                        <div class="btn btn-primary btn-outline btn-xs m-r-md">不限</div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                北京站
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                北京南站
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-b-sm">
+                    <div class="col-md-1"><span class="t-filter-title text-muted">出发时段</span></div>
+                    <div class="col-md-11">
+                        <div class="btn btn-primary btn-outline btn-xs m-r-md">不限</div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                6-12点
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                12-18点
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                18-24点
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-b-sm">
+                    <div class="col-md-1"><span class="t-filter-title text-muted">到达时段</span></div>
+                    <div class="col-md-11">
+                        <div class="btn btn-primary btn-outline btn-xs m-r-md">不限</div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                6-12点
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                12-18点
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                18-24点
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-b-sm">
+                    <div class="col-md-1"><span class="t-filter-title text-muted">是否始发</span></div>
+                    <div class="col-md-11">
+                        <div class="btn btn-primary btn-outline btn-xs m-r-md">不限</div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                始发
+                            </label>
+                        </div>
+                        <div class="checkbox checkbox-info checkbox-inline min-w100">
+                            <input id="checkbox30" type="checkbox">
+                            <label for="checkbox30">
+                                过路
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr empty"></div>
+                <div class="btn-group">
+                    <span class="btn btn-outline btn-link btn-xs m-l-n-xs text-muted">已选：</span>
+                    <a class="btn btn-outline btn-default btn-xs m-r-sm">中国国航<span class="i fa fa-close m-l-xs"></span></a>
+                    <a class="btn btn-outline btn-default btn-xs m-r-sm">中国国航<span class="i fa fa-close m-l-xs"></span></a>
+                    <a class="btn btn-outline btn-default btn-xs m-r-sm">中国国航<span class="i fa fa-close m-l-xs"></span></a>
+                    <a class="btn btn-link btn-xs m-r-sm">全部撤销<span class="i fa fa-close m-l-xs"></span></a>
+                </div>
+            </div>
+        </div>
+        <table class="table table-hover middle m-b-none">
+            <thead>
+                <tr class="active">
+                    <th>车次</th>
+                    <th>发/到时间 <i class="iconfont icon-sort f14 m-l-xs text-muted"></i></th>
+                    <th>发/到站</th>
+                    <th>耗时 <i class="iconfont icon-sort f14 m-l-xs text-muted"></i></th>
+                    <th>
+                        <div class="pull-left">参考票价 <i class="iconfont icon-sort f14 m-l-xs text-muted"></i></div>
+                        <div class="pull-right">
+                            <div class="checkbox checkbox-inline">
+                                <input id="checkboxs" type="checkbox">
+                                <label for="checkboxs">
+                                    只显示有票车次
+                                </label>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>G101</h3><span class="text-muted">去程</span></td>
+                    <td>
+                        <h3>06:30</h3><span class="text-muted">12:39</span>
+                    </td>
+                    <td>
+                        <div>
+                            <a class="btn btn-info btn-outline btn-xs m-r-xs m-b-xs">始
+                                            </a>北京南站</div>
+                        <div>
+                            <a class="btn btn-danger btn-outline btn-xs m-r-xs">终
+                                            </a>上海北站</div>
+                    </td>
+                    <td>5小时54分钟</td>
+                    <td>
+                        <div class="row t-price">
+                            <div class="col-md-3"><span class="f18 font-bold text-danger m-l-xs">¥740</span></div>
+                            <div class="col-md-3">二等座</div>
+                            <div class="col-md-3"><span class="text-muted">无票</span></div>
+                            <div class="col-md-3 text-right"><a href="#" class="btn btn-warning btn-sm">预订</a></div>
+                        </div>
+                        <div class="row t-price">
+                            <div class="col-md-3"><span class="f18 font-bold text-danger m-l-xs">¥740</span></div>
+                            <div class="col-md-3">二等座</div>
+                            <div class="col-md-3"><span class="text-muted">无票</span></div>
+                            <div class="col-md-3 text-right"><a href="#" class="btn btn-warning btn-sm">预订</a></div>
+                        </div>
+                        <div class="row t-price">
+                            <div class="col-md-3"><span class="f18 font-bold text-danger m-l-xs">¥740</span></div>
+                            <div class="col-md-3">二等座</div>
+                            <div class="col-md-3"><span class="text-warning">票源充足</span></div>
+                            <div class="col-md-3 text-right"><a href="#" class="btn btn-warning btn-sm">预订</a></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>G101</h3><span class="text-muted">去程</span></td>
+                    <td>
+                        <h3>06:30</h3><span class="text-muted">12:39</span>
+                    </td>
+                    <td>
+                        <div>
+                            <a class="btn btn-info btn-outline btn-xs m-r-xs m-b-xs">始
+                                            </a>北京南站</div>
+                        <div>
+                            <a class="btn btn-danger btn-outline btn-xs m-r-xs">终
+                                            </a>上海北站</div>
+                    </td>
+                    <td>5小时54分钟</td>
+                    <td>
+                        <div class="row t-price">
+                            <div class="col-md-3"><span class="f18 font-bold text-danger m-l-xs">¥740</span></div>
+                            <div class="col-md-3">二等座</div>
+                            <div class="col-md-3"><span class="text-muted">无票</span></div>
+                            <div class="col-md-3 text-right"><a href="#" class="btn btn-warning btn-sm">预订</a></div>
+                        </div>
+                        <div class="row t-price">
+                            <div class="col-md-3"><span class="f18 font-bold text-danger m-l-xs">¥740</span></div>
+                            <div class="col-md-3">二等座</div>
+                            <div class="col-md-3"><span class="text-muted">无票</span></div>
+                            <div class="col-md-3 text-right"><a href="#" class="btn btn-warning btn-sm">预订</a></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>G101</h3><span class="text-muted">去程</span></td>
+                    <td>
+                        <h3>06:30</h3><span class="text-muted">12:39</span>
+                    </td>
+                    <td>
+                        <div>
+                            <a class="btn btn-info btn-outline btn-xs m-r-xs m-b-xs">始
+                                            </a>北京南站</div>
+                        <div>
+                            <a class="btn btn-danger btn-outline btn-xs m-r-xs">终
+                                            </a>上海北站</div>
+                    </td>
+                    <td>5小时54分钟</td>
+                    <td>
+                        <div class="row t-price">
+                            <div class="col-md-3"><span class="f18 font-bold text-danger m-l-xs">¥740</span></div>
+                            <div class="col-md-3">二等座</div>
+                            <div class="col-md-3"><span class="text-muted">无票</span></div>
+                            <div class="col-md-3 text-right"><a href="#" class="btn btn-warning btn-sm">预订</a></div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="h-layer p-m" style="display:none">
+        <div class="row">
+            <div class="col-lg-9">
+                <table class="table table-hover middle m-b-none table-boder-top-none">
+                    <tbody>
+                        <tr>
+                            <td width="120"><img src="http://pavo.elongstatic.com/i/Hotel180_135/0003Ic9Z.jpg" width="120" height="90"></td>
+                            <td class="top">
+                                <h3 class="hotel-tit"><span class="tit m-r-sm">浦江精选酒店</span><label class="btn btn-primary btn-xs btn-outline m-r-sm">协议酒店</label> <div class="star-group text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div></h3>
+                                <p class="m-b-xs"><span class="text-warning">距离火车站15KM</span></p>
+                                <p class="m-b-none">[欢乐谷/工业大学] 北京市朝阳区东四环北京欢乐谷东侧(地铁7号线欢乐谷景区站B口)</p>
+                            </td>
+                            <td class="f14 font-bold text-warning">92%好评</td>
+                            <td><span class="f18 font-bold text-danger m-r-sm">¥740</span>间起</td>
+                            <td class="text-right"><a href="#" class="btn btn-primary m-r">选择 <span class="caret"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td width="120"><img src="http://pavo.elongstatic.com/i/Hotel180_135/0003Ic9Z.jpg" width="120" height="90"></td>
+                            <td class="top">
+                                <h3 class="hotel-tit"><span class="tit m-r-sm">浦江精选酒店</span><label class="btn btn-primary btn-xs btn-outline m-r-sm">协议酒店</label> <div class="star-group text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div></h3>
+                                <p class="m-b-xs"><span class="text-warning">距离火车站15KM</span></p>
+                                <p class="m-b-none">[欢乐谷/工业大学] 北京市朝阳区东四环北京欢乐谷东侧(地铁7号线欢乐谷景区站B口)</p>
+                            </td>
+                            <td class="f14 font-bold text-warning">92%好评</td>
+                            <td><span class="f18 font-bold text-danger m-r-sm">¥740</span>间起</td>
+                            <td class="text-right"><a href="#" class="btn btn-primary m-r">选择 <span class="caret"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td width="120"><img src="http://pavo.elongstatic.com/i/Hotel180_135/0003Ic9Z.jpg" width="120" height="90"></td>
+                            <td class="top">
+                                <h3 class="hotel-tit"><span class="tit m-r-sm">浦江精选酒店</span><label class="btn btn-primary btn-xs btn-outline m-r-sm">协议酒店</label> <div class="star-group text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div></h3>
+                                <p class="m-b-xs"><span class="text-warning">距离火车站15KM</span></p>
+                                <p class="m-b-none">[欢乐谷/工业大学] 北京市朝阳区东四环北京欢乐谷东侧(地铁7号线欢乐谷景区站B口)</p>
+                            </td>
+                            <td class="f14 font-bold text-warning">92%好评</td>
+                            <td><span class="f18 font-bold text-danger m-r-sm">¥740</span>间起</td>
+                            <td class="text-right"><a href="#" class="btn btn-primary m-r">选择 <span class="caret"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td width="120"><img src="http://pavo.elongstatic.com/i/Hotel180_135/0003Ic9Z.jpg" width="120" height="90"></td>
+                            <td class="top">
+                                <h3 class="hotel-tit"><span class="tit m-r-sm">浦江精选酒店</span><label class="btn btn-primary btn-xs btn-outline m-r-sm">协议酒店</label> <div class="star-group text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div></h3>
+                                <p class="m-b-xs"><span class="text-warning">距离火车站15KM</span></p>
+                                <p class="m-b-none">[欢乐谷/工业大学] 北京市朝阳区东四环北京欢乐谷东侧(地铁7号线欢乐谷景区站B口)</p>
+                            </td>
+                            <td class="f14 font-bold text-warning">92%好评</td>
+                            <td><span class="f18 font-bold text-danger m-r-sm">¥740</span>间起</td>
+                            <td class="text-right"><a href="#" class="btn btn-primary m-r">选择 <span class="caret"></span></a></td>
+                        </tr>
+                        <tr>
+                            <td width="120"><img src="http://pavo.elongstatic.com/i/Hotel180_135/0003Ic9Z.jpg" width="120" height="90"></td>
+                            <td class="top">
+                                <h3 class="hotel-tit"><span class="tit m-r-sm">浦江精选酒店</span><label class="btn btn-primary btn-xs btn-outline m-r-sm">协议酒店</label> <div class="star-group text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div></h3>
+                                <p class="m-b-xs"><span class="text-warning">距离火车站15KM</span></p>
+                                <p class="m-b-none">[欢乐谷/工业大学] 北京市朝阳区东四环北京欢乐谷东侧(地铁7号线欢乐谷景区站B口)</p>
+                            </td>
+                            <td class="f14 font-bold text-warning">92%好评</td>
+                            <td><span class="f18 font-bold text-danger m-r-sm">¥740</span>间起</td>
+                            <td class="text-right"><a href="#" class="btn btn-primary m-r">选择 <span class="caret"></span></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
     </div>
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
@@ -443,6 +1027,24 @@
             title: "更换航班",
             area: ['80%', '80%'], //宽高
             content: $('.f-layer')
+        });
+    })
+    $('.t-btn').on('click', function() {
+        layer.open({
+            type: 1,
+            skin: 'layui-layer-lan',
+            title: "更换车次",
+            area: ['80%', '80%'], //宽高
+            content: $('.t-layer')
+        });
+    })
+    $('.h-btn').on('click', function() {
+        layer.open({
+            type: 1,
+            skin: 'layui-layer-lan',
+            title: "更换酒店",
+            area: ['80%', '80%'], //宽高
+            content: $('.h-layer')
         });
     })
     </script>
