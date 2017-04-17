@@ -10161,7 +10161,9 @@ body.md-skin {
     padding-top: 100px;
 }
 
-.star-group {}
+.star-group {
+    display: inline-block;
+}
 
 
 /*框架修改*/
