@@ -168,10 +168,10 @@ div.collapse>table>tbody>tr>td{
 	border:none;
 	padding-bottom: 0;
 }
-div.collapse>table>tbody>tr span{
+/*div.collapse>table>tbody>tr span{
 	font-size: 22px;
 	color: #FF3366;
-}
+}*/
 div.collapse>table>tbody>tr:last-child>td:nth-child(4){
 	padding-left: 25px;
 	padding-top: 0;
@@ -232,8 +232,6 @@ div.collapse>table.table>tbody>tr p{
 	margin-left: 20px;
 }
 #reservation>table.table td b{
-	color: #FF3366;
-	font-size: 22px;
 	font-weight: normal;
 }
 #reservation>table.table td span{
@@ -340,7 +338,7 @@ div.tab-content form div.form-group label>i{
 	font-size: 16px;
 	font-style: normal;
 	position: relative;
-	transform: rotate(-45deg);
+	/*transform: rotate(-45deg);*/
 	margin-right: 60px;
 	margin-top: 7px;
 }
