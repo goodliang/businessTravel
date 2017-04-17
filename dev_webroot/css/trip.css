@@ -93,3 +93,27 @@
     margin-top: 70px;
     background: #fff;
 }
+
+.zoom-sort-bar {
+    overflow: hidden;
+    background: #f2f2f2;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.zoom-sort-bar .pull-left>a {
+    color: #666;
+}
+
+.zoom-sort-bar .pull-left>a:hover,
+.zoom-sort-bar .pull-left>a.active {
+    color: #54b9cc;
+}
+
+.zoom-policy {
+    display: inline-block;
+    line-height: 1.1;
+    padding-top: 6px;
+    padding-left: 10px;
+    color:#999;
+}

@@ -938,12 +938,184 @@
             <div class="room-body-main">
                 <div class="row">
                     <div class="col-lg-10">
-                        <div class="form-group">
+                        <div class="form-group m-b-none">
                             <input type="text" class="form-control input-lg">
                         </div>
                     </div>
                     <div class="col-lg-2">
                         <button class="btn btn-primary btn-lg btn-block">搜索</button>
+                    </div>
+                </div>
+                <div class="panel panel-default m-t-n-xs">
+                    <div class="panel-body">
+                        <div class="row m-b-sm">
+                            <div class="col-md-1"><span class="t-filter-title text-muted">位置</span></div>
+                            <div class="col-md-11">
+                                <div class="tabs-container">
+                                    <ul class="nav nav-line">
+                                        <li>
+                                            <div class="btn btn-primary btn-outline btn-xs">不限</div>
+                                        </li>
+                                        <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">机场 <span class="caret"></span></a></li>
+                                        <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">火车站 <span class="caret"></span></a></li>
+                                        <li class=""><a data-toggle="tab" href="#tab-3" aria-expanded="false">分公司 <span class="caret"></span></a></li>
+                                        <li class=""><a data-toggle="tab" href="#tab-4" aria-expanded="false">预设地址 <span class="caret"></span></a></li>
+                                    </ul>
+                                    <div class="tab-content" style="background-color: #fff">
+                                        <div id="tab-1" class="tab-pane active">
+                                            <div class="tab-main">
+                                                <div class="row">
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海虹桥机场</a></div>
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-primary">上海虹桥机场</a></div>
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海虹桥机场</a></div>
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海虹桥机场</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="tab-2" class="tab-pane">
+                                            <div class="tab-main">
+                                                <div class="row">
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海东站</a></div>
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海南站</a></div>
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海西站</a></div>
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海北站</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="tab-3" class="tab-pane">
+                                            <div class="tab-main">
+                                                <div class="row">
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海浦东分公司</a></div>
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海东方明珠分公司</a></div>
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海西站</a></div>
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海北站</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="tab-4" class="tab-pane">
+                                            <div class="tab-main">
+                                                <div class="row">
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海金融街88号楼401室</a></div>
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海高桥街41号院</a></div>
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海滨海路01号院</a></div>
+                                                    <div class="col-md-3"><a class="btn btn-xs btn-link">上海步行街南侧9号楼1室</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-b-sm">
+                            <div class="col-md-1"><span class="t-filter-title text-muted">价格</span></div>
+                            <div class="col-md-11">
+                                <div class="btn btn-primary btn-outline btn-xs m-r-md">不限</div>
+                                <div class="radio radio-info radio-inline min-w100">
+                                    <input type="radio" id="mn">
+                                    <label for="mn"> 150元以下 </label>
+                                </div>
+                                <div class="radio radio-info radio-inline min-w100">
+                                    <input type="radio" id="mn">
+                                    <label for="mn"> 150-300元 </label>
+                                </div>
+                                <div class="radio radio-info radio-inline min-w100">
+                                    <input type="radio" id="mn">
+                                    <label for="mn"> 301-450元 </label>
+                                </div>
+                                <div class="radio radio-info radio-inline min-w100">
+                                    <input type="radio" id="mn">
+                                    <label for="mn"> 451-600元 </label>
+                                </div>
+                                <div class="radio radio-info radio-inline min-w100">
+                                    <input type="radio" id="mn">
+                                    <label for="mn"> 600元以上 </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-b-sm">
+                            <div class="col-md-1"><span class="t-filter-title text-muted">星级</span></div>
+                            <div class="col-md-11">
+                                <div class="btn btn-primary btn-outline btn-xs m-r-md">不限</div>
+                                <div class="checkbox checkbox-info checkbox-inline min-w100">
+                                    <input id="checkbox30" type="checkbox">
+                                    <label for="checkbox30">
+                                        经济/客栈
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-info checkbox-inline min-w100">
+                                    <input id="checkbox30" type="checkbox">
+                                    <label for="checkbox30">
+                                        三星/舒
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-info checkbox-inline min-w100">
+                                    <input id="checkbox30" type="checkbox">
+                                    <label for="checkbox30">
+                                        四星/高档
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-info checkbox-inline min-w100">
+                                    <input id="checkbox30" type="checkbox">
+                                    <label for="checkbox30">
+                                        五星/豪华
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-info checkbox-inline min-w100">
+                                    <input id="checkbox30" type="checkbox">
+                                    <label for="checkbox30">
+                                        公寓
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-b-sm">
+                            <div class="col-md-1"><span class="t-filter-title text-muted">品牌</span></div>
+                            <div class="col-md-11">
+                                <div class="btn btn-primary btn-outline btn-xs m-r-md">不限</div>
+                                <div class="checkbox checkbox-info checkbox-inline min-w100">
+                                    <input id="checkbox30" type="checkbox">
+                                    <label for="checkbox30">
+                                        如家
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-info checkbox-inline min-w100">
+                                    <input id="checkbox30" type="checkbox">
+                                    <label for="checkbox30">
+                                        汉庭
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-info checkbox-inline min-w100">
+                                    <input id="checkbox30" type="checkbox">
+                                    <label for="checkbox30">
+                                        七天
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr empty"></div>
+                        <div class="btn-group">
+                            <span class="btn btn-outline btn-link btn-xs m-l-n-xs text-muted">已选：</span>
+                            <a class="btn btn-outline btn-default btn-xs m-r-sm">中国国航<span class="i fa fa-close m-l-xs"></span></a>
+                            <a class="btn btn-outline btn-default btn-xs m-r-sm">中国国航<span class="i fa fa-close m-l-xs"></span></a>
+                            <a class="btn btn-outline btn-default btn-xs m-r-sm">中国国航<span class="i fa fa-close m-l-xs"></span></a>
+                            <a class="btn btn-link btn-xs m-r-sm">全部撤销<span class="i fa fa-close m-l-xs"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="zoom-sort-bar m-b-sm">
+                    <div class="pull-left"><a class="m-r-lg active">推荐 <i class="iconfont icon-sort f14 m-l-xs text-muted"></i></a><a class="m-r-lg">口碑 <i class="iconfont icon-sort-up f14 m-l-xs text-muted"></i></a><a class="m-r-lg">距离 <i class="iconfont icon-sort-down f14 m-l-xs text-muted"></i></a><a class="m-r-lg">价格 <i class="iconfont icon-sort f14 m-l-xs text-muted"></i></a></div>
+                    <div class="pull-right"><span class="zoom-policy">查看政策</span><div class="hide zoom-policy-info">
+                            他的政府的经济政策将侧重于控制通货膨胀。<br> His administration's economic policy would focus on reining in inflation
+                        </div></div>
+                    <div class="pull-right">
+                        <div class="checkbox checkbox-info checkbox-circle checkbox-inline m-n">
+                            <input id="checkbox81" type="checkbox" checked="">
+                            <label for="checkbox81" class="f13">
+                                按差旅政策
+                            </label>
+                        </div>
+                        
+                        
                     </div>
                 </div>
                 <table class="table table-stroke middle m-b-none table-boder-top-none">
@@ -1137,6 +1309,15 @@
     <script>
     $(".refund-info").hover(function() {
         layer.tips($(this).siblings('.refund-info-body').html(), $(this), {
+            tips: [3, '#48adc0'],
+            time: 60000,
+            area: ['400px', 'auto']
+        });
+    }, function() {
+        layer.tips();
+    })
+    $(".zoom-policy").hover(function() {
+        layer.tips($('.zoom-policy-info').html(), $(this), {
             tips: [3, '#48adc0'],
             time: 60000,
             area: ['400px', 'auto']
