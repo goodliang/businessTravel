@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>会唐商旅采购系统</title>
     <link href="css/root.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/order.css">
+    <!--     <link rel="stylesheet" href="css/order.css"> -->
 </head>
 
 <body class="body-bg">
@@ -100,23 +100,36 @@
                     </li>
                 </ul>
             </nav>
-            <div class="wrapper wrapper-content animated fadeInRight container">
+            <div class="wrapper wrapper-content animated fadeInRight">
                 <!-- 内容区 -->
-                <p class="path">
-                    <a href="#"><i class="fa fa-chevron-left"></i> 返回&nbsp;</a>
-                    <span>审批号 29292023</span>
-                </p>
+                <div class="row wrapper border-bottom white-bg page-heading" style="margin:-25px -25px 25px">
+                    <div class="col-lg-10">
+                        <h2>我的行程</h2>
+                        <ol class="breadcrumb">
+                            <li>
+                                <a href="#">
+                                    我的行程
+                                </a>
+                            </li>
+                            <li class="active">
+                                <strong>审批号 29292023</strong>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-2">
+                    </div>
+                </div>
                 <div class="panel panel-info">
                     <div class="panel-body bg-info">
                         <div class="row">
-                            <div class="col-sm-4"><span class="text-muted">创建人：</span>吴小雨</div>
-                            <div class="col-sm-4"><span class="text-muted">创建时间：</span>2017-3-3 15:37</div>
-                            <div class="col-sm-4"><span class="text-muted">差旅人：</span>吴小雨</div>
-                            <div class="col-sm-4"><span class="text-muted">火车票：</span><span class="text-navy">￥1106</span>
+                            <div class="col-sm-3"><span class="text-muted">创建人：</span>吴小雨</div>
+                            <div class="col-sm-3"><span class="text-muted">创建时间：</span>2017-3-3 15:37</div>
+                            <div class="col-sm-3"><span class="text-muted">差旅人：</span>吴小雨</div>
+                            <div class="col-sm-3"><span class="text-muted">状态：</span><span class="text-success">已审批</span></div>
+                            <div class="col-sm-3"><span class="text-muted">火车票：</span><span class="text-navy">￥1106</span></div>
+                            <div class="col-sm-3"><span class="text-muted">洒店：</span><span class="text-navy">￥1106</span>
                             </div>
-                            <div class="col-sm-4"><span class="text-muted">洒店：</span><span class="text-navy">￥1106</span>
-                            </div>
-                            <div class="col-sm-4"><span class="text-muted">总费用：</span><span class="text-danger f18 font-bold">￥2106</span>
+                            <div class="col-sm-3"><span class="text-muted">总费用：</span><span class="text-danger f18 font-bold">￥2106</span>
                             </div>
                         </div>
                     </div>
@@ -126,7 +139,6 @@
                         <div class="panel-heading">
                             <a class="text-primary show" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><i class="fa fa-plane text-info f20"></i> 预订的交通</a>
                         </div>
-<<<<<<< HEAD
                         <div id="collapseOne" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 <table class="table table-hover middle m-b-none">
@@ -138,8 +150,6 @@
                                             <th>到达时间</th>
                                             <th>准点率</th>
                                             <th>余票</th>
-                                            <th>席别
-                                                </th>
                                             <th>价格</th>
                                         </tr>
                                     </thead>
@@ -156,7 +166,6 @@
                                             </td>
                                             <td>有餐 | 准点率77%</td>
                                             <td>102张</td>
-                                            <td>二等座</td>
                                             <td class="f20 font-bold text-danger">¥740</td>
                                         </tr>
                                         <tr>
@@ -171,7 +180,59 @@
                                             </td>
                                             <td>有餐 | 准点率77%</td>
                                             <td>102张</td>
+                                            <td class="f20 font-bold text-danger">¥740</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-hover middle m-b-none">
+                                    <thead>
+                                        <tr>
+                                            <th>车次</th>
+                                            <th>发/到时间</th>
+                                            <th>发/到站</th>
+                                            <th>耗时</th>
+                                            <th>座位等级</th>
+                                            <th>剩余票数</th>
+                                            <th>票价</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h3>G101</h3><span class="text-muted">去程</span></td>
+                                            <td>
+                                                <h3>06:30</h3><span class="text-muted">12:39</span>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <a class="btn btn-info btn-outline btn-xs m-r-xs m-b-xs">始
+                                            </a>北京南站</div>
+                                                <div>
+                                                    <a class="btn btn-danger btn-outline btn-xs m-r-xs">终
+                                            </a>上海北站</div>
+                                            </td>
+                                            <td>5小时54分钟</td>
                                             <td>二等座</td>
+                                            <td>余99张</td>
+                                            <td class="f20 font-bold text-danger">¥740</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h3>G101</h3><span class="text-muted">去程</span></td>
+                                            <td>
+                                                <h3>06:30</h3><span class="text-muted">12:39</span>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <a class="btn btn-info btn-outline btn-xs m-r-xs m-b-xs">始
+                                            </a>北京南站</div>
+                                                <div>
+                                                    <a class="btn btn-danger btn-outline btn-xs m-r-xs">终
+                                            </a>上海北站</div>
+                                            </td>
+                                            <td>5小时54分钟</td>
+                                            <td>二等座</td>
+                                            <td>余99张</td>
                                             <td class="f20 font-bold text-danger">¥740</td>
                                         </tr>
                                     </tbody>
@@ -181,7 +242,7 @@
                     </div>
                     <div class="panel panel-basic">
                         <div class="panel-heading"> <a class="text-primary show" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><i class="fa fa-bed text-info f20"></i> 预订的住宿</a></div>
-                        <div id="collapseTwo" class="panel-collapse collapse">
+                        <div id="collapseTwo" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 <div class="bg-info">
                                     <table class="table middle m-b-none border-none">
@@ -229,78 +290,6 @@
                                     </tbody>
                                 </table>
                             </div>
-=======
-                        <div class="col-lg-3 col-lg-offset-1" style="text-align: left;">
-                            <span style="margin-right: 20px;">总费用</span> 
-                            <span class="f26 font-bold text-danger">&yen; 1770</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <h2>
-                            <i class="fa fa-train text-info f20"></i>
-                            预定的交通
-                            <a class="fa fa-chevron-circle-down" href="#transportation" data-toggle="collapse" aria-expanded="false"></a>
-                        </h2>
-                        <div id="transportation" class="collapse" aria-expanded="false" >
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <td>车次</td>
-                                        <td>发/到时间</td>
-                                        <td>发/到站</td>
-                                        <td>耗时</td>
-                                        <td>票价/座位等级</td>
-                                        <td>剩余票数</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>G101</td>
-                                        <td>06:44</td>
-                                        <td><p class="starting">始</p>北京南站</td>
-                                        <td rowspan="2">5小时54分钟</td>
-                                        <td><span class="f20 text-danger font-bold">&yen;553</span></td>
-                                        <td rowspan="2">余99张</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">经停站</a></td>
-                                        <td>12:39</td>
-                                        <td><p class="termination">终</p>上海虹桥</td>
-                                        <td>二等座</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <td>车次</td>
-                                        <td>发/到时间</td>
-                                        <td>发/到站</td>
-                                        <td>耗时</td>
-                                        <td>票价/座位等级</td>
-                                        <td>剩余票数</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>G7</td>
-                                        <td>19:00</td>
-                                        <td><p class="starting">始</p>上海虹桥</td>
-                                        <td rowspan="2">4小时56分钟</td>
-                                        <td><span class="f20 text-danger font-bold">&yen;553</span></td>
-                                        <td rowspan="2">余99张</td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">经停站</a></td>
-                                        <td>23:56</td>
-                                        <td><p class="termination">终</p>北京南站</td>
-                                        <td>二等座</td>
-                                    </tr>
-                                </tbody>
-                            </table>
->>>>>>> 7d5bb5a3ba1bbe9f2da5e139b51e1d8ffe70f6b2
                         </div>
                     </div>
                 </div>
@@ -322,7 +311,6 @@
                                     <td><span class="text-info">审批通过</span></td>
                                     <td> &minus; </td>
                                 </tr>
-<<<<<<< HEAD
                                 <tr>
                                     <td>张海栋</td>
                                     <td> &minus; </td>
@@ -331,45 +319,6 @@
                                 </tr>
                             </tbody>
                         </table>
-=======
-                            </table>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>入住日期</th>
-                                        <th>离店日期</th>
-                                        <th>入住天数</th>
-                                        <th>房型</th>
-                                        <th>床型</th>
-                                        <th>早餐</th>
-                                        <th>宽带</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>2017-3-5</td>
-                                        <td>2017-3-7</td>
-                                        <td>2晚</td>
-                                        <td>大床房B (内宾)</td>
-                                        <td>单人床</td>
-                                        <td>无早</td>
-                                        <td>免费</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">
-                                            <a href="#">特殊需要</a>
-                                            <a href="#">取消政策</a>
-                                            <a href="#">担保信息</a>
-                                        </td>
-                                        <td colspan="5">
-                                            <div>协议价平均每晚：<b class="f26 text-danger">&yen; 240.00</b></div>
-                                            <div>总价：<b class="f26 text-danger">&yen; 480.00</b> <span>( 含税和费￥0.00 )</span></div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
->>>>>>> 7d5bb5a3ba1bbe9f2da5e139b51e1d8ffe70f6b2
                     </div>
                     <div class="hr m-t-none"></div>
                     <div class="row">
@@ -398,9 +347,7 @@
     <!-- Custom and plugin javascript -->
     <script src="js/plugins.js"></script>
     <script>
-    $('#accordion').collapse({
-        parent: true
-    })
+
     </script>
 </body>
 
