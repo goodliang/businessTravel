@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会唐商旅采购系统</title>
+    <link href="css/root.css" rel="stylesheet">
+</head>
+
+<body class="body-bg">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side navbar-left-blue" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span class="small-img">
+                            <div class="btn btn-primary btn-circle gender"><i class="iconfont icon-nan"></i></div>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="text-white f18 font-bold">天小雨</strong><b class="caret text-white"></b>
+                             </span> <span class="text-white text-xs block">xiaoyu_wu@eventown.com </span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="#">个人信息</a></li>
+                                <li><a href="#">账户安全</a></li>
+                                <li><a href="#">我的临时差旅人</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">安全退出</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            唐
+                        </div>
+                    </li>
+                    <li class="big-item"><a href="bookingTravel.html"><i class="iconfont icon-iconfont"></i><span class="nav-label">差旅预订</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-lishihangcheng"></i><span class="nav-label">我的行程</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-dingdan"></i><span class="nav-label">订单中心</span></a></li>
+                    <li class="big-item">
+                        <a href="#"><i class="iconfont icon-shenpi"></i><span class="nav-label">审批中心</span><span class="label label-warning pull-right">24</span></a>
+                    </li>
+                    <li class="big-item">
+                        <a href="#"><i class="iconfont icon-tijianbaogao"></i> <span class="nav-label">报告中心</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="#">节省明细</a></li>
+                            <li>
+                                <a href="#">机票<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">机票消费</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">舱位统计</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">承运商</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">火车票<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">火车票消费</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">座位统计</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">酒店<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">洒店消费</a></li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-zhanghu"></i><span class="nav-label">账户管理</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper">
+            <nav class="navbar navbar-fixed-top nav-blue" role="navigation">
+                <div class="navbar-header">
+                    <div class="navbar-logo">
+                        <a href="/"><img src="img/sl_logo_small.png"></a>
+                    </div>
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i> </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> 安全退出
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <!-- 内容区 -->
+                <div class="row wrapper border-bottom white-bg page-heading" style="margin:-25px -25px 25px">
+                    <div class="col-lg-10">
+                        <h2>机票详情</h2>
+                        <ol class="breadcrumb">
+                            <li>
+                                <a href="#">
+                                    订单中心
+                                </a>
+                            </li>
+                            <li class="active">
+                                <strong>机票详情</strong>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-2">
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-body bg-info">
+                        <div class="row">
+                            <div class="col-lg-3">订单号：hh575aq939900</div>
+                            <div class="col-lg-3">创建时间：2017-3-3 15:37</div>
+                            <div class="col-lg-3">订单状态：已成交<i class="icon-ok-sign"></i></div>
+                            <div class="col-lg-3">
+                                总费用<strong class="f18 text-danger m-l-sm">¥1770</strong><small class="text-muted m-l-sm">已包含燃油费</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-basic">
+                    <div class="panel-heading">
+                        <i class="fa fa-plane text-info f20"></i> <span>航班信息</span>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-bordered">
+                            <caption class="f16">乘机人：李辉</caption>
+                            <tbody>
+                                <tr>
+                                    <td>单程</td>
+                                    <td>
+                                        <h4>2017-02-10    南京-北京</h4>
+                                        <table class="table middle m-b-none">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <h4><img src="http://m.tuniucdn.com/fb2/t1/G1/M00/08/6D/Cii9EVbNinCINxjgAAA-wVuEaZ8AACRoQES4gIAAD7Z262_w40_h40_c1_t0.png" width="16px" height="16px">中国国航</h4><span class="text-muted">CA302 机型：321</span></td>
+                                                    <td>
+                                                        <h3>06:30</h3><span class="text-muted">首都机场T3</span>
+                                                    </td>
+                                                    <td class="top"><span class="flight_time">2小时15分</span></td>
+                                                    <td>
+                                                        <h3>08:50</h3><span class="text-muted">虹桥机场T2</span>
+                                                    </td>
+                                                    <td class="text-warning">出票中</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>退改说明</td>
+                                    <td>
+                                        <h4>成人票</h4>
+                                        <ul class="list-inline m-b-none">
+                                            <li>套餐退订费：只退民航发展基金、燃油费</li>
+                                            <li>套餐同舱更改费：不支持产品更改</li>
+                                            <li>签转条件：不得签转</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>行李限额</td>
+                                    <td>旅客可免费携带一件重量不超过10公斤、尺寸不超过40CM×30CM×20CM的非托运行李。无免费餐饮服务。航班延误或取消，不提供经济补偿。</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="panel panel-basic">
+                    <div class="panel-heading">
+                        <i class="fa fa-user text-info f20"></i> <span>乘机人信息</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <ul class="list-unstyled p-sm m-b-none">
+                                            <li><span class="text-muted">乘机人姓名：</span>李辉</li>
+                                            <li><span class="text-muted">证件号码：</span>3***************0</li>
+                                            <li><span class="text-muted">证件类型：</span>身份证</li>
+                                            <li><span class="text-muted">乘客类型：</span>成人</li>
+                                            <li><span class="text-muted">乘客生日：</span>1991.02.10</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <ul class="list-unstyled p-sm m-b-none">
+                                            <li><span class="text-muted">乘机人姓名：</span>李辉</li>
+                                            <li><span class="text-muted">证件号码：</span>3***************0</li>
+                                            <li><span class="text-muted">证件类型：</span>身份证</li>
+                                            <li><span class="text-muted">乘客类型：</span>成人</li>
+                                            <li><span class="text-muted">乘客生日：</span>1991.02.10</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <ul class="list-unstyled p-sm m-b-none">
+                                            <li><span class="text-muted">乘机人姓名：</span>李辉</li>
+                                            <li><span class="text-muted">证件号码：</span>3***************0</li>
+                                            <li><span class="text-muted">证件类型：</span>身份证</li>
+                                            <li><span class="text-muted">乘客类型：</span>成人</li>
+                                            <li><span class="text-muted">乘客生日：</span>1991.02.10</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    Design and Developed by <a href="#">会唐网</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> Example Company &copy; 2007-2017
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/plugins.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

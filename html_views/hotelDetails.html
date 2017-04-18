@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会唐商旅采购系统</title>
+    <link href="css/root.css" rel="stylesheet">
+    <style type="text/css" media="screen">
+    #moveDate {
+        border-collapse: 0;
+        border-collapse: collapse;
+    }
+    
+    #moveDate p,
+    #moveDate td {
+        margin-bottom: 0;
+        padding: 5px;
+    }
+    
+    #moveDate span {
+        font-size: 36px;
+        margin-left: 7px;
+    }
+    
+    #moveDate td:first-child,
+    #moveDate td:nth-child(4) {
+        border: 1px solid #ccc;
+        border-right: none;
+    }
+    
+    #moveDate td:last-child,
+    #moveDate td:nth-child(2) {
+        border: 1px solid #ccc;
+        border-left: none;
+    }
+    </style>
+</head>
+
+<body class="body-bg">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side navbar-left-blue" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span class="small-img">
+                            <div class="btn btn-primary btn-circle gender"><i class="iconfont icon-nan"></i></div>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="text-white f18 font-bold">天小雨</strong><b class="caret text-white"></b>
+                             </span> <span class="text-white text-xs block">xiaoyu_wu@eventown.com </span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="#">个人信息</a></li>
+                                <li><a href="#">账户安全</a></li>
+                                <li><a href="#">我的临时差旅人</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">安全退出</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            唐
+                        </div>
+                    </li>
+                    <li class="big-item"><a href="bookingTravel.html"><i class="iconfont icon-iconfont"></i><span class="nav-label">差旅预订</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-lishihangcheng"></i><span class="nav-label">我的行程</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-dingdan"></i><span class="nav-label">订单中心</span></a></li>
+                    <li class="big-item">
+                        <a href="#"><i class="iconfont icon-shenpi"></i><span class="nav-label">审批中心</span><span class="label label-warning pull-right">24</span></a>
+                    </li>
+                    <li class="big-item">
+                        <a href="#"><i class="iconfont icon-tijianbaogao"></i> <span class="nav-label">报告中心</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="#">节省明细</a></li>
+                            <li>
+                                <a href="#">机票<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">机票消费</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">舱位统计</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">承运商</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">火车票<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">火车票消费</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">座位统计</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">酒店<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">洒店消费</a></li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-zhanghu"></i><span class="nav-label">账户管理</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper">
+            <nav class="navbar navbar-fixed-top nav-blue" role="navigation">
+                <div class="navbar-header">
+                    <div class="navbar-logo">
+                        <a href="/"><img src="img/sl_logo_small.png"></a>
+                    </div>
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i> </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> 安全退出
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <!-- 内容区 -->
+                <div class="row wrapper border-bottom white-bg page-heading" style="margin:-25px -25px 25px">
+                    <div class="col-lg-10">
+                        <h2>酒店详情</h2>
+                        <ol class="breadcrumb">
+                            <li>
+                                <a href="#">
+                                    订单中心
+                                </a>
+                            </li>
+                            <li class="active">
+                                <strong>酒店详情</strong>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-2">
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-body bg-info">
+                        <div class="row">
+                            <div class="col-lg-3">订单号：hh575aq939900</div>
+                            <div class="col-lg-3">创建时间：2017-3-3 15:37</div>
+                            <div class="col-lg-3">订单状态：已成交<i class="icon-ok-sign"></i></div>
+                            <div class="col-lg-3">
+                                总费用<strong class="f18 text-danger m-l-sm">¥1770</strong><small class="text-muted m-l-sm">已包含税费服务费</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-basic">
+                    <div class="panel-heading">
+                        <div class="pull-left"><i class="fa fa-home text-info f20"></i> <span>酒店信息</span></div>
+                        <div class="pull-right">
+                            <label class="btn btn-primary btn-xs btn-rounded btn-outline dim"><i class="fa fa-check"></i> 酒店确认中</label>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <h2 class="m-t-none text-navy">锦江之星（北京国贸）</h2>
+                        <div class="row">
+                            <div class="col-lg-3">酒店地址：北京市朝阳区建国门外大街1号</div>
+                            <div class="col-lg-3">酒店类型：协议酒店</div>
+                            <div class="col-lg-3">前台电话：010-89000233</div>
+                            <!--  <div class="col-lg-3"><a href="#">查看地图</a></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-basic">
+                    <div class="panel-heading">
+                        <i class="fa fa-bed text-info f20"></i> <span>酒店信息</span>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table middle m-b-none border-none">
+                            <tbody>
+                                <tr>
+                                    <td class="text-right">房型</td>
+                                    <td>
+                                        <span class="pull-left f18">双人床(内宾)</span>
+                                        <div class="pull-right">房费/早餐: <strong class="f18 text-danger"> ¥1770</strong></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">入住时间</td>
+                                    <td class="middle">
+                                        <div class="pull-left">
+                                            <table id="moveDate" class="middle">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p>2019-09</p>
+                                                            <p>星期六</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>4</span>
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;¯&nbsp;
+                                                        </td>
+                                                        <td>
+                                                            <p>2017-09</p>
+                                                            <p>星期六</p>
+                                                        </td>
+                                                        <td>
+                                                            <span>6</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="pull-left m-l-md m-t-lg">共计:2晚</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">间数</td>
+                                    <td>
+                                        <table id="moveDate">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="border: 1px solid #ccc;padding:5px 15px;"><span>1</span>间</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">早餐</td>
+                                    <td>无早餐</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">入住人</td>
+                                    <td>李辉</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    Design and Developed by <a href="#">会唐网</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> Example Company &copy; 2007-2017
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/plugins.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

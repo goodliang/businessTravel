@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>会唐商旅采购系统</title>
     <link href="css/root.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/order.css">
+    <!--     <link rel="stylesheet" href="css/order.css"> -->
 </head>
 
 <body class="body-bg">
@@ -100,86 +100,102 @@
                     </li>
                 </ul>
             </nav>
-            <div class="wrapper wrapper-content animated fadeInRight container">
+            <div class="wrapper wrapper-content animated fadeInRight">
                 <!-- 内容区 -->
-                <p>审批号&nbsp; 201611280982</p>
-                <div class="well well-lg">
-                    <div class="row">
-                        <div class="col-lg-2">创建人 : 吴小雨</div>
-                        <div class="col-lg-10 text-left">创建时间 : 2017-3-3 15:37</div>
-                        <div class="col-lg-2" style="margin-top: 10px;">差旅人 : 吴小雨</div>
+                <div class="row wrapper border-bottom white-bg page-heading" style="margin:-25px -25px 25px">
+                    <div class="col-lg-10">
+                        <h2>审批详情</h2>
+                        <ol class="breadcrumb">
+                            <li>
+                                <a href="#">
+                                    审批中心
+                                </a>
+                            </li>
+                            <li class="active">
+                                <strong>审批号 29292023</strong>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-2">
                     </div>
                 </div>
-                <div class="row" style="margin: 25px 0;">
-                    <div class="col-lg-12">
-                        <h3>预定的交通</h3>
-                        <table class="transportation f16">
+                <div class="panel panel-info">
+                    <div class="panel-body bg-info">
+                        <div class="row">
+                            <div class="col-lg-3">创建人 : 吴小雨</div>
+                            <div class="col-lg-3">创建时间 : 2017-3-3 15:37</div>
+                            <div class="col-lg-3">差旅人 : 吴小雨</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-basic">
+                    <div class="panel-body">
+                        <h4>预定的交通</h4>
+                        <p>
+                            <ul class="list-inline">
+                                <li>G112</li>
+                                <li>北京南站-上海虹桥</li>
+                                <li class="f16 text-danger">￥445</li>
+                                <li class="text-muted">消费所属成本中心：财务部</li>
+                            </ul>
+                        </p>
+                        <p class="text-muted">未选择最低价原因</p>
+                        <h4>预定的酒店</h4>
+                        <p>
+                            <ul class="list-inline">
+                                <li>上海四季酒店</li>
+                                <li>入住时间：2017-2-3 至 2017-2-4</li>
+                                <li>共1晚</li>
+                                <li class="f16 text-danger">￥445</li>
+                                <li class="text-muted">消费所属成本中心：财务部</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="text-right">总费用<strong class="f18 text-danger m-l-xs">¥ 998</strong></div>
+                </div>
+                <div class="panel panel-basic">
+                    <div class="panel-body">
+                        <table class="table table-hover m-b-none">
+                            <thead>
+                                <tr>
+                                    <td>顺序</td>
+                                    <td>审批人</td>
+                                    <td>审批时间</td>
+                                    <td>审批结果</td>
+                                    <td>备注</td>
+                                </tr>
+                            </thead>
                             <tbody>
                                 <tr>
-                                    <td>G112</td>
-                                    <td>北京南站-上海虹桥</td>
-                                    <td><span class="f20 text-danger font-bold">&yen;553</span></td>
-                                    <td class="f14 text-muted"> 消费所属成本中心：财务部 </td>
+                                    <td>1</td>
+                                    <td>李辉</td>
+                                    <td>2017-3-23 18:02</td>
+                                    <td class="text-info">审批通过</td>
+                                    <td> &minus; </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4" class="f14 text-muted"> 未选择最低价原因</td>
+                                    <td>2</td>
+                                    <td>张海东</td>
+                                    <td>&minus;</td>
+                                    <td class="text-warning">审批拒绝</td>
+                                    <td> 这周你不能出差，你另有安排其他事 </td>
                                 </tr>
                             </tbody>
                         </table>
-                        <h3>预定的酒店</h3>
-                        <table class="transportation f16">
-                            <tbody>
-                                <tr>
-                                    <td>上海四季酒店</td>
-                                    <td>入住时间：2017-2-3 至 2017-2-4  &nbsp;共1晚</td>
-                                    <td><span class="f20 text-danger font-bold">&yen;445</span></td>
-                                    <td class="f14 text-muted">消费所属成本中心：财务部</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-lg-12" style="border-bottom: 1px solid #CCCCCC;"></div>
-                    <div class="col-lg-12 text-right f16" style="padding: 15px;">
-                        总费用 &nbsp;
-                        <span class="f26 text-danger font-bold">&yen; 998</span>
                     </div>
                 </div>
-                <table class="table table-responsive">
-                    <thead>
-                        <tr>
-                            <td>顺序</td>
-                            <td>审批人</td>
-                            <td>审批时间</td>
-                            <td>审批结果</td>
-                            <td>备注</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>李辉</td>
-                            <td>2017-3-23 18:02</td>
-                            <td class="text-success">已通过审批</td>
-                            <td> &minus; </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>张海东</td>
-                            <td>&minus;</td>
-                            <td>待审批</td>
-                            <td> &minus; </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="f15">审批备注 : </p>
-                <textarea class="form-control" name="" id="" cols="20" rows="3"></textarea>
-                <br><br>
-                <div class="col-lg-1 m-t-md">
-                    <a href="#" class="f14"><i class="fa fa-chevron-left"></i> 返回</a>
+                <div class="panel panel-basic">
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label>审批备注：</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-10 text-center">
-                    <button type="button" class="btn f16 btn-success buttonBtn">同意</button>
-                    <button type="button" class="btn f16 btn-danger buttonBtn">拒绝</button>
+                <div class="text-center space-20">
+                    <button type="button" class="pass btn btn-primary btn-w-m">同意</button>
+                    <button type="button" class="pass btn btn-warning btn-w-m">拒绝</button>
                 </div>
             </div>
             <div class="footer">
