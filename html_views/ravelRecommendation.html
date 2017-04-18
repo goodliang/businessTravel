@@ -144,7 +144,7 @@
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-basic">
                         <div class="panel-heading">
-                           <a class="text-primary show" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><i class="fa fa-plane text-info f20"></i> 推荐飞机票</a>
+                            <a class="text-primary show" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><i class="fa fa-plane text-info f20"></i> 推荐飞机票</a>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in">
                             <div class="panel-body">
@@ -1089,9 +1089,12 @@
                 </div>
                 <div class="zoom-sort-bar m-b-sm">
                     <div class="pull-left"><a class="m-r-lg active">推荐 <i class="iconfont icon-sort f14 m-l-xs text-muted"></i></a><a class="m-r-lg">口碑 <i class="iconfont icon-sort-up f14 m-l-xs text-muted"></i></a><a class="m-r-lg">距离 <i class="iconfont icon-sort-down f14 m-l-xs text-muted"></i></a><a class="m-r-lg">价格 <i class="iconfont icon-sort f14 m-l-xs text-muted"></i></a></div>
-                    <div class="pull-right"><span class="zoom-policy">查看政策</span><div class="hide zoom-policy-info">
-                            他的政府的经济政策将侧重于控制通货膨胀。<br> His administration's economic policy would focus on reining in inflation
-                        </div></div>
+                    <div class="pull-right"><span class="zoom-policy">查看政策</span>
+                        <div class="hide zoom-policy-info">
+                            他的政府的经济政策将侧重于控制通货膨胀。
+                            <br> His administration's economic policy would focus on reining in inflation
+                        </div>
+                    </div>
                     <div class="pull-right">
                         <div class="checkbox checkbox-info checkbox-circle checkbox-inline m-n">
                             <input id="checkbox81" type="checkbox" checked="">
@@ -1099,8 +1102,6 @@
                                 按差旅政策
                             </label>
                         </div>
-                        
-                        
                     </div>
                 </div>
                 <table class="table table-stroke middle m-b-none table-boder-top-none">
@@ -1332,15 +1333,14 @@
         });
     })
     $('.h-btn').on('click', function() {
-
+        layer.open({
+            type: 1,
+            skin: 'layui-layer-lan',
+            title: "更换酒店",
+            area: ['80%', '80%'], //宽高
+            content: $('.h-layer')
+        });
     })
-    layer.open({
-        type: 1,
-        skin: 'layui-layer-lan',
-        title: "更换酒店",
-        area: ['80%', '80%'], //宽高
-        content: $('.h-layer')
-    });
     </script>
 </body>
 

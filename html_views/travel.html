@@ -100,12 +100,25 @@
                     </li>
                 </ul>
             </nav>
-            <div class="wrapper wrapper-content animated fadeInRight container">
+            <div class="wrapper wrapper-content animated fadeInRight">
                 <!-- 内容区 -->
-                <p class="path">
-                    <a href="#"><i class="fa fa-chevron-left"></i> 返回&nbsp;</a>
-                    <span>审批号 29292023</span>
-                </p>
+                <div class="row wrapper border-bottom white-bg page-heading" style="margin:-25px -25px 25px">
+                    <div class="col-lg-10">
+                        <h2>我的行程</h2>
+                        <ol class="breadcrumb">
+                            <li>
+                                <a href="#">
+                                    我的行程
+                                </a>
+                            </li>
+                            <li class="active">
+                                <strong>审批号 29292023</strong>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-2">
+                    </div>
+                </div>
                 <div class="panel panel-info">
                     <div class="panel-body bg-info">
                         <div class="row">
@@ -137,8 +150,6 @@
                                             <th>到达时间</th>
                                             <th>准点率</th>
                                             <th>余票</th>
-                                            <th>席别
-                                            </th>
                                             <th>价格</th>
                                         </tr>
                                     </thead>
@@ -155,7 +166,6 @@
                                             </td>
                                             <td>有餐 | 准点率77%</td>
                                             <td>102张</td>
-                                            <td>二等座</td>
                                             <td class="f20 font-bold text-danger">¥740</td>
                                         </tr>
                                         <tr>
@@ -170,7 +180,59 @@
                                             </td>
                                             <td>有餐 | 准点率77%</td>
                                             <td>102张</td>
+                                            <td class="f20 font-bold text-danger">¥740</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-hover middle m-b-none">
+                                    <thead>
+                                        <tr>
+                                            <th>车次</th>
+                                            <th>发/到时间</th>
+                                            <th>发/到站</th>
+                                            <th>耗时</th>
+                                            <th>座位等级</th>
+                                            <th>剩余票数</th>
+                                            <th>票价</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h3>G101</h3><span class="text-muted">去程</span></td>
+                                            <td>
+                                                <h3>06:30</h3><span class="text-muted">12:39</span>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <a class="btn btn-info btn-outline btn-xs m-r-xs m-b-xs">始
+                                            </a>北京南站</div>
+                                                <div>
+                                                    <a class="btn btn-danger btn-outline btn-xs m-r-xs">终
+                                            </a>上海北站</div>
+                                            </td>
+                                            <td>5小时54分钟</td>
                                             <td>二等座</td>
+                                            <td>余99张</td>
+                                            <td class="f20 font-bold text-danger">¥740</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h3>G101</h3><span class="text-muted">去程</span></td>
+                                            <td>
+                                                <h3>06:30</h3><span class="text-muted">12:39</span>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <a class="btn btn-info btn-outline btn-xs m-r-xs m-b-xs">始
+                                            </a>北京南站</div>
+                                                <div>
+                                                    <a class="btn btn-danger btn-outline btn-xs m-r-xs">终
+                                            </a>上海北站</div>
+                                            </td>
+                                            <td>5小时54分钟</td>
+                                            <td>二等座</td>
+                                            <td>余99张</td>
                                             <td class="f20 font-bold text-danger">¥740</td>
                                         </tr>
                                     </tbody>
@@ -180,7 +242,7 @@
                     </div>
                     <div class="panel panel-basic">
                         <div class="panel-heading"> <a class="text-primary show" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><i class="fa fa-bed text-info f20"></i> 预订的住宿</a></div>
-                        <div id="collapseTwo" class="panel-collapse collapse">
+                        <div id="collapseTwo" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 <div class="bg-info">
                                     <table class="table middle m-b-none border-none">
@@ -285,9 +347,7 @@
     <!-- Custom and plugin javascript -->
     <script src="js/plugins.js"></script>
     <script>
-    $('#accordion').collapse({
-        parent: true
-    })
+
     </script>
 </body>
 
