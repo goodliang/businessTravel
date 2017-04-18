@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>会唐商旅采购系统</title>
     <link href="css/root.css" rel="stylesheet">
-    <link href="css/order.css" rel="stylesheet">
+    <!-- <link href="css/order.css" rel="stylesheet"> -->
 </head>
 
 <body class="body-bg">
@@ -100,162 +100,302 @@
                     </li>
                 </ul>
             </nav>
-            <div class="wrapper wrapper-content animated fadeInRight container">
+            <div class="wrapper wrapper-content animated fadeInRight ">
                 <!-- 内容区 -->
-                <h2>审批中心</h2>
-                <div class="row">
+                    <div class="page-header no-borders">
+                        <h2 >审批中心</h2>
+                    </div>
+                <div class="tabs-container">
                     <ul class="nav nav-tabs">
-                        <li class="active m-l-md">
-                            <a href="#treat" data-toggle="tab">待审批2</a>
-                        </li>
-                        <li>
-                            <a href="#then"  data-toggle="tab">已审批2</a>
-                        </li>
+                        <li class="active"><a href="#treat" data-toggle="tab" aria-expanded="true">待审批2</a></li>
+                        <li><a href="#then" data-toggle="tab" aria-expanded="true">已审批2</a></li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade in active" id="treat">
-                            <form action="#" class="form-horizontal">
-                                <div class="row form-inline">
-                                    <div class="form-group col-lg-4">
-                                        <label for="corporation" class="control-label">所属公司：</label>
-                                          <input type="text" name="treatCorporation" class="form-control" id="corporation" placeholder="所属公司">
+                        <div class="tab-pane fade active in" id="treat">
+                            <div class="panel-body">
+                                <div class="form-horizontal ">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label ">
+                                                    所属公司 : 
+                                                </label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label ">
+                                                    部门 : 
+                                                </label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4"></div>
                                     </div>
-                                    <div class="form-group col-lg-4">
-                                        <label for="treatSection" class="control-label">部 门：</label>
-                                        <input type="text" name="treatSection" class="form-control" id="treatSection" placeholder="部门">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label ">
+                                                    申请人 : 
+                                                </label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label ">
+                                                    差旅人 : 
+                                                </label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label ">
+                                                    创建日期 : 
+                                                </label>
+                                                <div class="col-md-8 ">
+                                                    <div class="input-daterange input-group">
+                                                        <input type="text" class=" form-control" placeholder="开始日期">
+                                                        <span class="input-group-addon no-borders"><font><font>至</font></font></span>
+                                                        <input type="text" class=" form-control" placeholder="结束日期">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <button class="btn btn-primary">查询</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row form-inline">
-                                    <div class="form-group col-lg-4">
-                                        <label for="treatApplicant" class="control-label">申请人：</label>
-                                        <input type="text" name="treatApplicant" class="form-control" id="treatApplicant" placeholder="申请人">
-                                    </div>
-                                    <div class="form-group col-lg-4">
-                                        <label for="treatPeople" class="control-label">差旅人：</label>
-                                        <input type="text" name="treatPeople" class="form-control" id="treatPeople" placeholder="差旅人">
-                                    </div>
-                                    <div class="form-group col-lg-3">
-                                        <label for="treatDate" >创建时间：</label>
-                                        <input id="treatDate" name="treatStartTime" type="date" class="form-control">
-                                        <span> 至 </span>
-                                        <input id="treatDate" name="treatNedTime" type="date" class="form-control">
-                                    </div>
-                                    <div class="col-lg-1">
-                                        <input type="submit" name="treatSubmit" value="查询" class="btn btn-primary">
-                                    </div>
-                                </div>
-                            </form>
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>审批号</th>
-                                        <th>所属公司</th>
-                                        <th>部门</th>
-                                        <th>申请人</th>
-                                        <th>差旅人</th>
-                                        <th>创建日期</th>
-                                        <th>预算金额</th>
-                                        <th>操作</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><a href="#">201611280982</a></td>
-                                        <td>公司1</td>
-                                        <td>部门1</td>
-                                        <td>吴小雨</td>
-                                        <td>吴小雨</td>
-                                        <td>2016.11.14</td>
-                                        <td>&yen;434.00</td>
-                                        <td><a href="#">审批</a></td>
-                                        <td><a href="#">详情</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">201611280982</a></td>
-                                        <td>公司1</td>
-                                        <td>部门1</td>
-                                        <td>吴小雨</td>
-                                        <td>吴小雨</td>
-                                        <td>2016.11.14</td>
-                                        <td>&yen;434.00</td>
-                                        <td><a href="#">审批</a></td>
-                                        <td><a href="#">详情</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                <table class="table table-hover middle m-b-none f14">
+                                    <thead>
+                                        <tr>
+                                            <th>审批号</th>
+                                            <th>所属公司</th>
+                                            <th>部门</th>
+                                            <th>申请人</th>
+                                            <th>差旅人</th>
+                                            <th>创建日期</th>
+                                            <th>预算金额</th>
+                                            <th>操作</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-navy">
+                                                4641644484
+                                            </td>
+                                            <td class="text-muted">
+                                                公司1
+                                            </td>
+                                            <td class="text-muted">
+                                                部门1
+                                            </td>
+                                            <td class="text-muted">
+                                                吴小雨
+                                            </td>
+                                            <td>
+                                                吴小雨
+                                            </td>
+                                            <td>
+                                                2016.11.14
+                                            </td>
+                                            <td>
+                                                ￥434.00
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-success">审批</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-success">详情</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-navy">
+                                                4641644484
+                                            </td>
+                                            <td class="text-muted">
+                                                公司2
+                                            </td>
+                                            <td class="text-muted">
+                                                部门2
+                                            </td>
+                                            <td class="text-muted">
+                                                吴小雨
+                                            </td>
+                                            <td>
+                                                吴小雨
+                                            </td>
+                                            <td>
+                                                2016.11.14
+                                            </td>
+                                            <td>
+                                                ￥434.00
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-success">审批</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-success">详情</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="then">
-                            <form action="#" class="form-horizontal">
-                                <div class="row form-inline">
-                                    <div class="form-group col-lg-4">
-                                        <label for="thenCorporation" class="control-label">所属公司：</label>
-                                        <input type="text" name="thenCorporation" class="form-control" id="thenCorporation" placeholder="所属公司">
+                            <div class="panel-body">
+                                <div class="form-horizontal f14 ">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">
+                                                    所属公司 : 
+                                                </label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">
+                                                    部门 : 
+                                                </label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4"></div>
                                     </div>
-                                    <div class="form-group col-lg-4">
-                                        <label for="thenSection" class="control-label">部 门：</label>
-                                        <input type="text" name="thenSection" class="form-control" id="thenSection" placeholder="部门">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">
+                                                    申请人 : 
+                                                </label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">
+                                                    差旅人 : 
+                                                </label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">
+                                                    创建日期 : 
+                                                </label>
+                                                <div class="col-md-8">
+                                                    <div class="input-daterange input-group">
+                                                        <input type="text" class=" form-control" placeholder="开始日期">
+                                                        <span class="input-group-addon no-borders"><font><font>至</font></font></span>
+                                                        <input type="text" class=" form-control" placeholder="结束日期">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <button class="btn btn-primary">查询</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row form-inline">
-                                    <div class="form-group col-lg-4">
-                                        <label for="thenApplicant" class="control-label">申请人：</label>
-                                        <input type="text" name="thenApplicant" class="form-control" id="thenApplicant" placeholder="申请人">
-                                    </div>
-                                    <div class="form-group col-lg-4">
-                                        <label for="thenPeople" class="control-label">差旅人：</label>
-                                        <input type="text" name="thenPeople" class="form-control" id="thenPeople" placeholder="差旅人">
-                                    </div>
-                                    <div class="form-group col-lg-3">
-                                        <label for="thenStartDate" >创建时间：</label>
-                                        <input id="thenStartDate" name="thenStartDate" type="date" class="form-control">
-                                        <span> 至 </span>
-                                        <input id="thenEndDate" name="thenStartDate" type="date" class="form-control">
-                                    </div>
-                                    <div class="col-lg-1">
-                                        <input type="submit" name="thenSubmit" value="查询" class="btn btn-primary">
-                                    </div>
-                                </div>
-                            </form>
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>审批号</th>
-                                        <th>所属公司</th>
-                                        <th>部门</th>
-                                        <th>申请人</th>
-                                        <th>差旅人</th>
-                                        <th>创建日期</th>
-                                        <th>预算金额</th>
-                                        <th>审批状态</th>
-                                        <th>操作</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><a href="#">201611280982</a></td>
-                                        <td>公司1</td>
-                                        <td>部门1</td>
-                                        <td>吴小雨</td>
-                                        <td>吴小雨</td>
-                                        <td>2016.11.14</td>
-                                        <td>&yen;434.00</td>
-                                        <td><span class="pass">审批通过</span></td>
-                                        <td><a href="#">详情</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">201611280982</a></td>
-                                        <td>公司1</td>
-                                        <td>部门1</td>
-                                        <td>吴小雨</td>
-                                        <td>吴小雨</td>
-                                        <td>2016.11.14</td>
-                                        <td>&yen;434.00</td>
-                                        <td><span class="deny">审批拒绝</span></td>
-                                        <td><a href="#">详情</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                <table class="table table-hover middle m-b-none f14">
+                                    <thead>
+                                        <tr>
+                                            <th>审批号</th>
+                                            <th>所属公司</th>
+                                            <th>部门</th>
+                                            <th>申请人</th>
+                                            <th>差旅人</th>
+                                            <th>创建日期</th>
+                                            <th>预算金额</th>
+                                            <th>审批状态</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-navy">
+                                                4641644484
+                                            </td>
+                                            <td class="text-muted">
+                                                公司1
+                                            </td>
+                                            <td class="text-muted">
+                                                部门1
+                                            </td>
+                                            <td class="text-muted">
+                                                吴小雨
+                                            </td>
+                                            <td>
+                                                吴小雨
+                                            </td>
+                                            <td>
+                                                2016.11.14
+                                            </td>
+                                            <td>
+                                                ￥434.00
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-xs btn-success f14">审批通过</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-success">详情</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-navy">
+                                                4641644484
+                                            </td>
+                                            <td class="text-muted">
+                                                公司2
+                                            </td>
+                                            <td class="text-muted">
+                                                部门2
+                                            </td>
+                                            <td class="text-muted">
+                                                吴小雨
+                                            </td>
+                                            <td>
+                                                吴小雨
+                                            </td>
+                                            <td>
+                                                2016.11.14
+                                            </td>
+                                            <td>
+                                                ￥434.00
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-xs btn-danger f14">审批拒绝</a>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-success ">详情</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
