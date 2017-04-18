@@ -10356,6 +10356,14 @@ a:hover {
 .table.small > tfoot > tr > td {
     padding: 10px 15px;
 }
+.table.border-none > thead > tr > th,
+.table.border-none > tbody > tr > th,
+.table.border-none > tfoot > tr > th,
+.table.border-none > thead > tr > td,
+.table.border-none > tbody > tr > td,
+.table.border-none > tfoot > tr > td {
+    padding: 10px 15px;
+}
 
 .table-hover > tbody > tr > td.info:hover,
 .table-hover > tbody > tr > th.info:hover,
