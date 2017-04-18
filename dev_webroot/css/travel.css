@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/**
+ * 
+ * @title --
+ * @authors goodliang
+ * @date 2017-04-17 19:04:05
+ * 
+ */
+.nUser { position: relative; }
+.tabItems { display: none; }
+.userList { position: absolute;display: none;left: 0 px;top: 34 px;width: 185 px;border: 1 px solid# e5e6e7;border - radius: 3 px;background: #fff;z - index: 10; }
+.userList ul { margin: 0 px;padding: 0 px; }
+.userList ul li { list - style: none;
+    margin: 0 px;
+    padding: 0 px;
+    padding: 3 px 10 px;
+    cursor: pointer; }
+.userList ul li.name {
+    color: #000; margin-right:5px;}
+.userList ul li .email{margin-right:0px;}
+
+/*城市弹层*/
+/*城市弹层*/
+
+.evt_cityLayer {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 445px;
+    padding: 10px 15px 15px;
+    font-size: 13px;
+    background: # fff;
+    font - size: 13 px;
+    box - shadow: 0 4 px 10 px rgba(0, 0, 0, .15);
+    z - index: 9999;
+    display: none;
+}
+
+.evt_cityLayer.closeImg {
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 14 px;
+    width: 14 px;
+    margin - right: 7 px;
+    margin - top: 7 px
+}
+
+.evt_cityLayer ul {
+    height: 1 % ;
+    margin: 0;
+    padding: 0;
+    margin - left: 10 px
+}
+
+.evt_cityLayer ul: after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+.evt_cityLayer ul li {
+    float: left;
+    height: 24 px;
+    vertical - align: middle;
+    line - height: 24 px;
+    overflow: hidden;
+    text - align: left;
+    width: 20 % ;
+    cursor: pointer;
+}
+
+.evt_cityLayer ul li: hover {
+    color: #a51c30
+}
+
+.evt_cityLayer.cityNav {
+    border - bottom: 1 px solid# e8e8e8;
+    padding - left: 10 px;
+    zoom: 1;
+    margin - bottom: 5 px;
+}
+
+.evt_cityLayer.cityNav: after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+.evt_cityLayer.cityNav span {
+    position: relative;
+    bottom: -1 px;
+    float: left;
+    display: inline;
+    margin - right: 28 px;
+    cursor: pointer;
+    font - size: 13 px;
+    height: 32 px;
+    line - height: 32 px;
+    vertical - align: middle;
+    text - align: center
+}
+
+.evt_cityLayer.cityNav span.active {
+    border - bottom: 1 px solid# a51c30;
+    color: #a51c30;
+    font - weight: bold;
+}
+
+.evt_cityLayer.cityNav span: hover {
+        color: #a51c30;
+    }
+    .evt_cityLayer.cityName dl dt { float: left;width: 5 % ;color: #c00; }
+    .evt_cityLayer.cityName dl dd { float: left;width: 95 % ; }
+    .evt_cityLayer.cityName dl dd ul li { float: left;margin - bottom: 10 px;margin - top: 5 px;margin - right: 15 px;width: auto;height: auto;line - height: normal; }
+
+.line { width: 1000 px;margin: 20 px auto;color: #48adc0;}
+.line span{color:# 48 adc0; }
+.irs - bar { height: 8 px;top: 25 px;border - top: 1 px solid #428bca;border-bottom: 1px solid # 428 bca;background: #48adc0;}
+.irs-bar-edge {height: 10px;top: 33px;width: 14px;border: 1px solid # 428 bca;border - right: 0;background: #48adc0;border-radius: 16px 0 0 16px;-moz-border-radius: 16px 0 0 16px;}
+.irs-slider{background:# fff;background - image: none; }
+    .irs - line - left, .irs - line - right, .irs - line - mid { background: #dcdcdc; }
+
+.irs - from, .irs - to, .irs - single { color: #000!important;font-size: 14px;line-height: 1.333;text-shadow: none;padding: 1px 5px;background:# fff;top: -2 px; - moz - border - radius: 3 px;border - radius: 3 px; }
