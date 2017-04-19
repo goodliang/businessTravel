@@ -10291,16 +10291,19 @@ a:hover {
     color: #666;
 }
 
-.nav.nav-line>li>a:hover,.nav.nav-line>li>a:active {
+.nav.nav-line>li>a:hover,
+.nav.nav-line>li>a:active {
     background: none;
     color: #54b9cc;
 }
-.tab-main{
+
+.tab-main {
     margin: 10px 0;
-    padding:10px;
+    padding: 10px;
     background: #f2f2f2;
     border-radius: 2px;
 }
+
 .table > thead > tr > th,
 .table > tbody > tr > th,
 .table > tfoot > tr > th,
@@ -10356,6 +10359,7 @@ a:hover {
 .table.small > tfoot > tr > td {
     padding: 10px 15px;
 }
+
 .table.border-none > thead > tr > th,
 .table.border-none > tbody > tr > th,
 .table.border-none > tfoot > tr > th,
@@ -10619,4 +10623,25 @@ body.mini-navbar .navbar-left-blue .nav.nav-third-level {
 .irs-to:after,
 .irs-single:after {
     border-top-color: #54b9cc !important;
+}
+
+
+/*登录*/
+
+.login-bg {
+    background-image: url(../img/login_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-box {
+    width: 400px;
+    padding: 30px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -200px;
 }
