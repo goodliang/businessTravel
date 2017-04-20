@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会唐商旅采购系统</title>
+    <link href="css/root.css" rel="stylesheet">
+    <link href="css/plugins/chartist/chartist.min.css" rel="stylesheet">
+</head>
+
+<body class="body-bg">
+    <div id="wrapper">
+         <nav class="navbar-default navbar-static-side navbar-left-blue" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span class="small-img">
+                            <div class="btn btn-primary btn-circle gender"><i class="iconfont icon-nan"></i></div>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="text-white f18 font-bold">天小雨</strong><b class="caret text-white"></b>
+                             </span> <span class="text-white text-xs block">xiaoyu_wu@eventown.com </span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="#">个人信息</a></li>
+                                <li><a href="#">账户安全</a></li>
+                                <li><a href="#">我的临时差旅人</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">安全退出</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            唐
+                        </div>
+                    </li>
+                    <li class="big-item"><a href="bookingTravel.html"><i class="iconfont icon-iconfont"></i><span class="nav-label">差旅预订</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-lishihangcheng"></i><span class="nav-label">我的行程</span></a></li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-dingdan"></i><span class="nav-label">订单中心</span></a></li>
+                    <li class="big-item">
+                        <a href="#"><i class="iconfont icon-shenpi"></i><span class="nav-label">审批中心</span><span class="label label-warning pull-right">24</span></a>
+                    </li>
+                    <li class="big-item">
+                        <a href="#"><i class="iconfont icon-tijianbaogao"></i> <span class="nav-label">报告中心</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="#">节省明细</a></li>
+                            <li>
+                                <a href="#">机票<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">机票消费</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">舱位统计</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">承运商</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">火车票<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">火车票消费</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">座位统计</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">酒店<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li>
+                                        <a href="#">洒店消费</a></li>
+                                    <li>
+                                        <a href="#">部门分析</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="big-item"><a href="#"><i class="iconfont icon-zhanghu"></i><span class="nav-label">账户管理</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper">
+            <nav class="navbar navbar-fixed-top nav-blue" role="navigation">
+                <div class="navbar-header">
+                    <div class="navbar-logo">
+                        <a href="/"><img src="img/sl_logo_small.png"></a>
+                    </div>
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i> </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> 安全退出
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="wrapper wrapper-content animated fadeInRight ">
+                <!-- 内容区 -->
+                <h2>承运商</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-basic" style="padding: 0;">
+                            <div class="panel-body">
+                                <table class="table table-bordered m-b-none text-center">
+                                    <thead class="text-white bg-primary">
+                                        <tr class="info">
+                                            <td>承运商</td>
+                                            <td>机票数量</td>
+                                            <td>总票价</td>
+                                            <td>平均票价</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>中国航空公司</td>
+                                            <td>594</td>
+                                            <td>￥869,863</td>
+                                            <td>￥1,464.42</td>
+                                        </tr>
+                                        <tr>
+                                            <td>中国东方航空公司</td>
+                                            <td>513</td>
+                                            <td>￥713,994</td>
+                                            <td>￥1,391.80</td>
+                                        </tr>
+                                        <tr>
+                                            <td>南海航空公司</td>
+                                            <td>295</td>
+                                            <td>￥370,365</td>
+                                            <td>￥1,255.47</td>
+                                        </tr>
+                                        <tr>
+                                            <td>中国南方航空公司</td>
+                                            <td>233</td>
+                                            <td>￥260,281</td>
+                                            <td>￥1,117.09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>上海航空公司</td>
+                                            <td>60</td>
+                                            <td>￥57,418</td>
+                                            <td>￥956,97</td>
+                                        </tr>
+                                        <tr>
+                                            <td>深圳航空公司</td>
+                                            <td>41</td>
+                                            <td>￥54,526</td>
+                                            <td>￥1,329.90</td>
+                                        </tr>
+                                        <tr>
+                                            <td>厦门航空公司</td>
+                                            <td>28</td>
+                                            <td>￥26,831</td>
+                                            <td>￥958,25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>中国联合航空公司</td>
+                                            <td>26</td>
+                                            <td>￥33,634</td>
+                                            <td>￥1,293.62</td>
+                                        </tr>
+                                        <tr>
+                                            <td>其他国内航空公司</td>
+                                            <td>367</td>
+                                            <td>￥383,326</td>
+                                            <td>￥1,044.49</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>合计</td>
+                                            <td>2157</td>
+                                            <td>￥2,770,238</td>
+                                            <td>￥1,284.30</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5><font><font>前五承运商分布</font></font></h5>
+                            </div>
+                            <div class="ibox-content">
+                                <div id="ct-chart5" class="ct-perfect-fourth"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-pie" style="width: 100%; height: 100%;"><g class="ct-series ct-series-c"><path d="M240.5,5A175,175,0,0,0,89.252,268.028L240.5,180Z" class="ct-slice-pie" value="4"></path><text dx="164.72277716886163" dy="136.25" text-anchor="middle" class="ct-label">33%</text></g><g class="ct-series ct-series-b"><path d="M88.946,267.5A175,175,0,0,0,328.528,331.248L240.5,180Z" class="ct-slice-pie" value="3"></path><text dx="217.8533335535294" dy="264.5185098002935" text-anchor="middle" class="ct-label">25%</text></g><g class="ct-series ct-series-a"><path d="M328,331.554A175,175,0,0,0,240.5,5L240.5,180Z" class="ct-slice-pie" value="5"></path><text dx="325.0185098002935" dy="157.35333355352944" text-anchor="middle" class="ct-label">42%</text></g></svg></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5><font><font>热门航线占比</font></font></h5>
+                            </div>
+                            <div class="ibox-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cumque recusandae aspernatur, libero dignissimos. Vitae, animi. Iste blanditiis, officiis laboriosam vero deserunt similique reiciendis repellat odit doloribus aliquid alias minima.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    Design and Developed by <a href="#">会唐网</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> Example Company &copy; 2007-2017
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/plugins.js"></script>
+    <!-- ChartJS-->
+    <script src="js/plugins/echarts/echarts.min.js"></script>
+    <script src="js/plugins/echarts/china.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
