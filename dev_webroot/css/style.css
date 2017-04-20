@@ -62,6 +62,14 @@ h5 {
     font-size: 18px;
 }
 
+.f48 {
+    font-size: 48px;
+}
+
+.f60 {
+    font-size: 60px;
+}
+
 .nav > li > a {
     color: #a7b1c2;
     font-weight: 600;
@@ -10165,6 +10173,11 @@ body.md-skin {
     display: inline-block;
 }
 
+.media-basic .media-body {
+    display: table-cell;
+    width: 10000px;
+}
+
 
 /*框架修改*/
 
@@ -10623,6 +10636,16 @@ body.mini-navbar .navbar-left-blue .nav.nav-third-level {
 .irs-to:after,
 .irs-single:after {
     border-top-color: #54b9cc !important;
+}
+
+.multiple {
+    font-size: 22px;
+    color: #999;
+}
+
+.multiple .iconfont {
+    font-size: 22px;
+    cursor: pointer;
 }
 
 

@@ -141,10 +141,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel-group" id="accordion">
+                <div class="panel-group" id="traffic">
                     <div class="panel panel-basic">
                         <div class="panel-heading">
-                            <a class="text-primary show" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><i class="fa fa-plane text-info f20"></i> 推荐飞机票</a>
+                            <a class="text-primary show" data-toggle="collapse" data-parent="#traffic" href="#collapseOne"><i class="fa fa-plane text-info f20"></i> 推荐飞机票</a>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in">
                             <div class="panel-body">
@@ -215,7 +215,7 @@
                     </div>
                     <div class="panel panel-basic">
                         <div class="panel-heading">
-                            <a class="text-primary show" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> <i class="fa fa-train text-info f20"></i> 推荐火车票</a>
+                            <a class="text-primary show" data-toggle="collapse" data-parent="#traffic" href="#collapseTwo"> <i class="fa fa-train text-info f20"></i> 推荐火车票</a>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse">
                             <div class="panel-body">
@@ -1284,6 +1284,193 @@
             </div>
         </div>
     </div>
+    <div class="p-layer p-m" style="display:none">
+        <div class="panel-group" id="policy">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h5 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#policy" href="#policyOne">根据贵公司差旅政策规定，因您未选择最低价商品，故您选择原因：</a>
+                                            </h5>
+                </div>
+                <div id="policyOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div class="radio radio-info">
+                            <input type="radio" id="singleRadio31" value="option2" name="radioSingle1" checked="" aria-label="Single radio Two">
+                            <label>所选商品与最低标准差价在200元以内，符合要求</label>
+                        </div>
+                        <div class="radio radio-info">
+                            <input type="radio" id="singleRadio32" value="option2" name="radioSingle1" aria-label="Single radio Two">
+                            <label>员工单独差旅，未选择最低价</label>
+                        </div>
+                        <div class="radio radio-info">
+                            <input type="radio" id="singleRadio33" value="option2" name="radioSingle1" aria-label="Single radio Two">
+                            <label>外部人员指定，或会唐网员工与外部人员陪同差旅</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#policy" href="#policyTwo" >根据贵公司差旅政策规定，选择您时间段内的最低价的商品：</a>
+                                            </h4>
+                </div>
+                <div id="policyTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="radio radio-info">
+                            <input type="radio" id="singleRadio34" value="option2" name="radioSingle11" checked="" aria-label="Single radio Two">
+                            <label>
+                                <ul class="list-inline">
+                                    <li>海南航空</li>
+                                    <li>HU7603</li>
+                                    <li>8:35起飞</li>
+                                    <li>￥470</li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div class="radio radio-info">
+                            <input type="radio" id="singleRadio35" value="option2" name="radioSingle11" aria-label="Single radio Two">
+                            <label>
+                                <ul class="list-inline">
+                                    <li>上海外滩7天酒店</li>
+                                    <li>标准间</li>
+                                    <li>无早</li>
+                                    <li>单人床</li>
+                                    <li>￥470</li>
+                                </ul>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center space-20">
+            <button class="btn btn-primary">确定</button>
+        </div>
+    </div>
+    <div class="o-layer p-m" style="display:none">
+        <form action="" class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2 text-right">差旅目的：</label>
+                <div class="col-md-9">
+                    <textarea class="form-control" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 text-right form-control-static">费用所属成本中心：</label>
+                <div class="col-md-10">
+                    <div class="row m-b-sm">
+                        <div class="col-md-3 form-control-static">
+                            <div class="pull-left">火车票订单</div>
+                            <div class="pull-right">￥1106</div>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-control">
+                                <option>1</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-control">
+                                <option>1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row m-b-sm">
+                        <div class="col-md-3 form-control-static">
+                            <div class="pull-left">酒店订单</div>
+                            <div class="pull-right">￥1106</div>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-control">
+                                <option>1</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-control">
+                                <option>1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row m-b-sm">
+                        <div class="col-md-3 form-control-static">
+                            <div class="pull-left">接送机订单</div>
+                            <div class="pull-right">￥1106</div>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-control">
+                                <option>1</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-control">
+                                <option>1</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 text-right">选择审批人：</label>
+                <div class="col-md-10">
+                    <div class="row m-b-sm">
+                        <div class="col-md-3">
+                            <label for="" class="font-noraml">所属公司</label>
+                            <select class="form-control">
+                                <option>1</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="" class="font-noraml">所属部门</label>
+                            <select class="form-control">
+                                <option>1</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="" class="font-noraml">审批人</label>
+                            <select class="form-control">
+                                <option>1</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="multiple" style="padding-top: 32px;">
+                                <i class="iconfont icon-tianjia text-navy"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-b-sm">
+                        <div class="col-md-3">
+                            <label for="" class="font-noraml">所属公司</label>
+                            <select class="form-control">
+                                <option>1</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="" class="font-noraml">所属部门</label>
+                            <select class="form-control">
+                                <option>1</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="" class="font-noraml">审批人</label>
+                            <select class="form-control">
+                                <option>1</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="multiple" style="padding-top: 32px;">
+                                <i class="iconfont icon-tianjia text-navy"></i>
+                                <i class="iconfont icon-jian1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center space-20">
+                <button class="btn btn-primary btn-w-m m-r-md">确定</button>
+                <button class="btn btn-warning btn-w-m">取消</button>
+            </div> 
+        </form>
+    </div>
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -1311,7 +1498,10 @@
     }, function() {
         layer.tips();
     })
-    $('#accordion').collapse({
+    $('#traffic').collapse({
+        parent: true
+    })
+    $('#policy').collapse({
         parent: true
     })
     $('.f-btn').on('click', function() {
@@ -1333,14 +1523,28 @@
         });
     })
     $('.h-btn').on('click', function() {
-        layer.open({
-            type: 1,
-            skin: 'layui-layer-lan',
-            title: "更换酒店",
-            area: ['80%', '80%'], //宽高
-            content: $('.h-layer')
-        });
-    })
+            layer.open({
+                type: 1,
+                skin: 'layui-layer-lan',
+                title: "更换酒店",
+                area: ['80%', '80%'], //宽高
+                content: $('.h-layer')
+            });
+        })
+        // layer.open({
+        //     type: 1,
+        //     skin: 'layui-layer-lan',
+        //     title: "请确定没有选择最低报价原因",
+        //     area: ['600px', '600px'], //宽高
+        //     content: $('.p-layer')
+        // });
+    layer.open({
+        type: 1,
+        skin: 'layui-layer-lan',
+        title: "提交订单",
+        area: ['1000px', 'auto'], //宽高
+        content: $('.o-layer')
+    });
     </script>
 </body>
 
